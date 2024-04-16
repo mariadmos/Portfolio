@@ -104,8 +104,6 @@ body {
 
 /* Estilos básicos para os links */
 .nav-link {
-    color: white;
-    text-decoration: none;
     display: inline-block;
     padding: 5px 0;
     position: relative;
@@ -138,6 +136,10 @@ body {
 /* Estilo ao passar o mouse sobre o link */
 .nav-link:hover {
     background-position: 0;
+}
+/* Estilo da barra antes do link ao passar o mouse */
+.nav-link:hover::before {
+    width: 100%;
 }
 
 .overlay-image {
