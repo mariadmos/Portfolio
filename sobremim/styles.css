@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: rgb(249, 232, 232); /* Define a cor do texto como branca para contrastar com o fundo preto */
+}
+
+header, main, footer {
+    padding: 20px; /* Adiciona algum espaçamento interno para o conteúdo */
+}
+
+h1, h2 {
+    color: #54b3d6; /* Define a cor do título */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens de lista horizontalmente */
+    margin-right: 20px; /* Adiciona algum espaçamento entre os itens de lista */
+}
+
+a {
+    color: #54b3d6; /* Define a cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse sobre os links */
+}
