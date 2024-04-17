@@ -102,14 +102,6 @@ body {
     padding-top: 20vh;
 }
 
-.centro-image img {
-    width: 120%; /* Aumenta a largura em 10% */
-    height: auto; /* Mantém a proporção */
-    max-width: 100%;
-    max-height: 95vh;
-    padding-top: 11vh;
-}
-
 /* Estilos básicos para os links */
 .nav-link {
     display: inline-block;
@@ -177,16 +169,3 @@ body {
     transform: translate(-50%, -50%); /* Centraliza as imagens */
 }
 
-.bottom-right img:hover {
-    transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% no hover */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
-    filter: brightness(2000%); /* Aumenta o brilho da imagem em 20% no hover */
-}
-    /*transition: filter 0.5s ease; /* Adiciona uma transição suave 
-    animation: mudarCor 5s infinite linear; /* Inicia a animação de mudança de cor 
-}
-
-@keyframes mudarCor {
-    0% { filter: hue-rotate(0deg); } /* Inicia com a cor original (0 graus) 
-    100% { filter: hue-rotate(360deg); } /* Termina com a cor totalmente alterada (360 graus)
-}*/

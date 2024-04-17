@@ -126,3 +126,50 @@ body {
     color: #d61010;
 }
 
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .row {
+    width: 100%;
+    height: calc(500px / 3);
+    background-color: lightblue;
+    position: relative;
+  }
+  
+  .text {   
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 50px);
+    transform: translateY(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Text opacity transition */
+    z-index: 1; /* Ensure text is above line */
+  }
+  
+  .row:hover .text {
+    opacity: 1;
+  }
+  
+  .row:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 50px; /* Adjust as needed */
+    height: 2px;
+    background-color: red;
+    transform: translateY(-1px);
+    transition: width 0.3s ease, left 0.3s ease; /* Line width and position transition */
+  }
+  
+  .row:hover {
+    background-color: lightgreen;
+  }
+  
