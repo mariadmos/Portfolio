@@ -1,8 +1,15 @@
 body {
     background-color: black;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('Portfolio/styles.css') format('woff2'),
+         url('Portfolio/styles.css') format('woff');
+  }
+  
 
 .container {
     display: flex;
@@ -10,6 +17,13 @@ body {
     align-items: flex-start;
     height: 100vh;
     padding: 20px;
+}
+
+
+.menu-sobre-mim{
+        position: fixed;
+            top: 50%;
+            right: 0px;
 }
 /* Posicionando elementos nos cantos da tela */
 .top-left {
@@ -192,3 +206,28 @@ body {
     0% { filter: hue-rotate(0deg); } /* Inicia com a cor original (0 graus) 
     100% { filter: hue-rotate(360deg); } /* Termina com a cor totalmente alterada (360 graus)
 }*/
+
+
+/* Codigo de estilo do Onii */
+
+  .full-screen {
+      height: 100vh;
+      /* Ocupa toda a altura da tela */
+      /* Cor de fundo opcional */
+      text-align: center;
+      /* Centraliza conteúdo opcional */
+      padding: 20px;
+      /* Espaçamento interno opcional */
+  }
+
+  .full-screen:nth-child(2) {
+      margin-top: 100vh;
+      /* Margem igual à altura da tela */
+      /* Cor de fundo opcional */
+  }
+
+   .full-screen:nth-child(3) {
+       margin-top: 100vh;
+       /* Margem igual à altura da tela */
+       /* Cor de fundo opcional */
+   }
