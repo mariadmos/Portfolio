@@ -17,6 +17,25 @@ body {
     background-color: black; /* Cor de fundo opcional */
 }
 
+
+@keyframes neon {
+    0% {
+        filter: brightness(150%) hue-rotate(0deg);
+    }
+    50% {
+        filter: brightness(150%) hue-rotate(180deg);
+    }
+    100% {
+        filter: brightness(150%) hue-rotate(360deg);
+    }
+}
+
+
+.neon-effect {
+    animation: neon 1s infinite alternate;
+}
+
+
 .container {
     display: flex;
     justify-content: space-between;
