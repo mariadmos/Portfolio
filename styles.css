@@ -16,19 +16,18 @@ body {
     height: 100vh;
     background-color: black; /* Cor de fundo opcional */
 }
-
-
 @keyframes neon {
     0% {
-        filter: brightness(150%) hue-rotate(0deg);
+        filter: brightness(150%);
     }
     50% {
-        filter: brightness(150%) hue-rotate(180deg);
+        filter: brightness(100%);
     }
     100% {
-        filter: brightness(150%) hue-rotate(360deg);
+        filter: brightness(150%);
     }
 }
+
 
 
 .neon-effect {
