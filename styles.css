@@ -1,15 +1,21 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('/Orbitron/Orbitron-Regular.ttf') format('truetype');
+}
+
 body {
     background-color: black;
     color: white;
-    font-family: 'Orbitron', sans-serif;
+    font-family: Orbitron, sans-serif;
 }
 
-@font-face {
-    font-family: 'Orbitron';
-    src: url('Portfolio/styles.css') format('woff2'),
-         url('Portfolio/styles.css') format('woff');
-  }
-  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Cor de fundo opcional */
+}
 
 .container {
     display: flex;
@@ -35,6 +41,7 @@ body {
 }
 
 .top-right {
+    margin-right: 40px;
     font-size: 19px;
     position: absolute;
     top: 14px;
@@ -58,6 +65,7 @@ body {
 }
 
 .bottom-right {
+    margin-right: 40px;
     position: absolute;
     bottom: 14px;
     right: 23px;
@@ -103,29 +111,6 @@ body {
     height: 30px;
     margin-top: 10px;
 }
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: black; /* Cor de fundo opcional */
-}
-
-.centered-image img {
-    max-width: 100%;
-    max-height: 78vh;
-    padding-top: 20vh;
-}
-
-.centro-image img {
-    width: 120%; /* Aumenta a largura em 10% */
-    height: auto; /* Mantém a proporção */
-    max-width: 100%;
-    max-height: 95vh;
-    padding-top: 11vh;
-}
-
 /* Estilos básicos para os links */
 .nav-link {
     display: inline-block;
@@ -212,16 +197,6 @@ body {
        /* Cor de fundo opcional */
    }
 
-   body {
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    margin: 0;
-    padding: 20px;
-}
-.containere {
-    max-width: 800px;
-    margin: auto;
-}
 
 .card {
     background-color: #fff;
@@ -245,7 +220,8 @@ body {
   }
   
   .overlay {
-    flex: 1; /* Ocupa todo o espaço restante */
+    width: 60%; /* Define a largura da div do texto */
+    text-align: left; /* Alinha o texto à esquerda */
   }
   
   .overlay-image {
@@ -266,7 +242,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adicione um fundo branco com transparência */
   }
 .section h1 {
     font-size: 24px;
@@ -275,7 +250,7 @@ body {
 }
 
 .section p {
-    font-size: 16px;
+    font-size: 10px;
     color: #ffffff;
     line-height: 1.6;
     flex: 1; /* Ocupa o espaço restante */
@@ -294,6 +269,31 @@ body {
 }
 
 .section{
-    display: flex;
-    margin-top: 650px;
+    display: auto;
+    margin-top: 900px;
+}
+
+
+
+
+strong {
+    color: rgb(191, 0, 255); /* Define a cor vermelha ao passar o mouse sobre o título */
+}
+
+.sobre-mim {
+    margin-left: 0%;
+    text-align: center;
+    font-size: 16px;
+    width: auto; /* Largura da div */
+    height: auto; /* Mantém a proporção original da imagem */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+    margin-right: 30px
+}
+
+
+.svg{
+
+    width: 200px; /* Largura da div */
+    height: 200px; /* Altura da div */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa */
 }
