@@ -46,7 +46,7 @@ body {
     position: absolute;
     bottom: 14px;
     left: 23px;
-    color: orange; /* Cor do texto laranja */
+    color: rgb(234, 0, 255); /* Cor do texto laranja */
 }
 
 .right-side {
@@ -74,11 +74,11 @@ body {
 
 
 .top-left, .top-right, .bottom-left, .right-side, .bottom-right {
-    color: red;
+    color: rgb(255, 0, 251);
 }
 
 .orange-text {
-    color: red;
+    color: rgb(221, 0, 255);
 }
 
 .gray-text {
@@ -135,8 +135,8 @@ body {
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(
         to right,
-        #eb1414,
-        #f04604 50%,
+        #d614eb,
+        #d614eb 50%,
         #f3f2f2 50%
     );
     background-size: 200% 100%;
@@ -166,35 +166,11 @@ body {
     width: 100%;
 }
 
-.overlay-image {
-    position: relative; /* Alterado para relative para posicionar o brilho */
-    left: 500px; /* Move o elemento 50px para a direita */
-    display: inline-block; /* Alterado para inline-block para ocupar apenas o espaço necessário */
-    flex-shrink: 0; /* Evita que a imagem diminua de tamanho */
-    margin-left: 20px; /* Adiciona uma margem à esquerda da imagem */
-}
-
-.overlay-image img {
-    max-width: 90%;
-    max-height: 100vh;
-    padding-top: 15vh;
-    height: auto;
-    display: block;
-    opacity: 1; /* Ajustado para 1 para evitar que a imagem esteja pré-definida com opacidade */
-    transition: filter 0.5s ease; /* Adicionado para criar uma transição suave */
-}
 
 .overlay-image:hover img {
     filter: brightness(150%); /* Adicionado o filtro de brilho ao passar o mouse */
 }
 
-.centered-image,
-.overlay-image {
-    position: absolute; /* Definido position: absolute para as duas imagens */
-    top: 50%; /* Posiciona as imagens no centro verticalmente */
-    left: 50%; /* Posiciona as imagens no centro horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza as imagens */
-}
 
 .bottom-right img:hover {
     transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% no hover */
@@ -264,15 +240,34 @@ body {
 /* Estilos para a seção "Sobre Mim" */
 
 .section {
-    margin-top: 50px; /* Ajuste conforme necessário */
-    padding: 20px;
-    background-color: #fff; /* Cor de fundo da seção */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #333; /* Cor do texto */
-}
-
-
+    display: flex;
+    align-items: center;
+  }
+  
+  .overlay {
+    flex: 1; /* Ocupa todo o espaço restante */
+  }
+  
+  .overlay-image {
+    top: 40px;
+    position: relative;
+    width: 35%; /* Ajuste conforme necessário */
+  }
+  
+  .overlay-image img {
+    top: 40px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .brilho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adicione um fundo branco com transparência */
+  }
 .section h1 {
     font-size: 24px;
     color: #fffbfb;
@@ -281,7 +276,7 @@ body {
 
 .section p {
     font-size: 16px;
-    color: #666;
+    color: #ffffff;
     line-height: 1.6;
     flex: 1; /* Ocupa o espaço restante */
     padding-right: 20px; /* Adiciona um espaçamento à direita do texto */
@@ -296,4 +291,9 @@ body {
 .container-perfil {
     display: flex;
     align-items: center; /* Alinha os itens verticalmente */
+}
+
+.section{
+    display: flex;
+    margin-top: 650px;
 }
