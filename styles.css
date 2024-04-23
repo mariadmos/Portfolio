@@ -99,7 +99,7 @@ body {
 .bottom-right {
     bottom: 14px;
     color: white; /* Cor do texto */
-    width: 80%;
+    margin-left: 70%;
     align-items: flex-end;
     display: flex;
     justify-content: flex-end;
@@ -128,8 +128,9 @@ body {
 }
 
 .right-side a {
+    font-size: 22px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-decoration: none;
     color: white;
     writing-mode: vertical-rl; /* Orientação vertical da direita para a esquerda */
@@ -141,8 +142,8 @@ body {
 }
 
 .bottom-right img {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     margin-top: 10px;
 }
 /* Estilos básicos para os links */
