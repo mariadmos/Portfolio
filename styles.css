@@ -345,3 +345,9 @@ strong {
       transform: translateX(100%); /* Ending position */
     }
   }
+
+  .sol{
+    position: fixed;
+    top: 150px;
+    right: 170px;
+  }
