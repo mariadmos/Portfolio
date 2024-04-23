@@ -12,12 +12,13 @@
     <div class="container-geral">
         <div class="menu-sobre-mim">
             <div class="right-side">
-                <a href="#first" class="nav-link">Sobre Mim</a>
-                <a href="#second" class="nav-link">Projetos</a>
-                <a href="#third" class="nav-link">Contatos</a>
+                <a href="#first" class="nav-link">Inicio</a>
+                <a href="#second" class="nav-link">Sobre Mim</a>
+                <a href="#third" class="nav-link">Projetos</a>
+                <a href="#forth" class="nav-link">Contatos</a>
             </div>
         </div>
-        <div id="first" class=" full-screen">
+        <div id="first" class="full-screen">
             <div class="top-left">Maria Dalva Martins</div>
             <div class="top-right">Portfolio</div>
             <div class="section">
@@ -42,15 +43,14 @@
                     </p>
                     </div>
                 </div>
-               
+                <div class="bottom-right">
+                    <a href="https://www.linkedin.com/in/mariadalvamos/"><img src="/img/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/estudandoparaalimentarflorzinha"><img src="/img/github.png" alt="GitHub"></a>
+                </div>
             </div>
             <div class="bottom-left">
                 <span class="orange-text">Dev front-end</span><br>
                 <span class="gray-text">From BR</span>
-            </div>
-            <div class="bottom-right">
-                <a href="https://www.linkedin.com/in/mariadalvamos/"><img src="/img/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://github.com/estudandoparaalimentarflorzinha"><img src="/img/github.png" alt="GitHub"></a>
             </div>
         </div>
         <div id="second" class="sobre-mim full-screen">
@@ -58,19 +58,26 @@
             <h2>Nesta seção, compartilho minhas experiências com as linguagens de programação que utilizo diariamente.
                 Desde a imersão em projetos desafiadores até o constante aprendizado, cada experiência contribui 
                para o meu desenvolvimento como programador.</h2>
-            <img src="img/figma.svg" alt="Descrição do SVG">
-            <img src="img/react.svg" alt="Descrição do SVG">
-            <img src="img/c.svg" alt="Descrição do SVG">
-            <img src="img/git.svg" alt="Descrição do SVG">
-            <img src="img/phyton.svg" alt="Descrição do SVG">
-            <img src="img/js.svg" alt="Descrição do SVG">
-            <img src="img/Group 1920.svg" alt="Descrição do SVG">
+            <div class="moving-div">
+                <img src="img/figma.svg" alt="Descrição do SVG" class="moving-image image1">
+                <img src="img/react.svg" alt="Descrição do SVG" class="moving-image image2">
+                <img src="img/c.svg" alt="Descrição do SVG" class="moving-image image3">
+                <img src="img/git.svg" alt="Descrição do SVG" class="moving-image image4">
+                <img src="img/phyton.svg" alt="Descrição do SVG" class="moving-image image5">
+                <img src="img/js.svg" alt="Descrição do SVG" class="moving-image image6">
+                <img src="img/Group 1920.svg" alt="Descrição do SVG" class="moving-image image7">
+            </div>
             <div>
                 <img class=""src="/img/elementos.svg" alt="Imagem elementos">
             </div>
         </div>
 
         <div id="third" class="sobre-mim full-screen">
+            <div class="row" id="row1">
+                <div class="text">Contatos</div>
+            </div>
+        </div>
+        <div id="forth" class="sobre-mim full-screen">
             <div class="row" id="row1">
                 <div class="text">Contatos</div>
             </div>
@@ -89,5 +96,62 @@
             }
         });
     });
+</script>
+<script>
+const container = document.querySelector('.moving-div');
+const image1 = document.querySelector('.image1');
+const image2 = document.querySelector('.image2');
+const image3 = document.querySelector('.image3');
+const image4 = document.querySelector('.image4');
+const image5 = document.querySelector('.image5');
+const image6 = document.querySelector('.image6');
+const image7 = document.querySelector('.image7');
+
+/* images.forEach(img => {
+  moveImage(img);
+}); */
+
+setTimeout(()=>{
+moveImage(image1, 0);
+setTimeout(()=>{
+moveImage(image2, 10);
+setTimeout(()=>{
+moveImage(image3, 20);
+setTimeout(()=>{
+moveImage(image4, 40);
+setTimeout(()=>{
+moveImage(image5, 60);
+setTimeout(()=>{
+moveImage(image6, 70);
+setTimeout(()=>{
+moveImage(image7, 80);
+}, 1000)
+}, 1000)
+}, 1000)
+}, 1000)
+}, 1000)
+}, 1000)
+}, 1000)
+
+
+function moveImage(img, num) {
+  const containerWidth = container.offsetWidth + num;
+  const containerHeight = container.offsetHeight + num;
+
+  const radius = Math.min(containerWidth, containerHeight) / 2 - img.width / 2;
+  const centerX = containerWidth / 2;
+  const centerY = containerHeight / 2;
+  let angle = 0;
+
+  setInterval(() => {
+    const newX = centerX + radius * Math.cos(angle);
+    const newY = centerY + radius * Math.sin(angle);
+
+    img.style.left = `${newX}px`;
+    img.style.top = `${newY}px`;
+
+    angle += 0.1; // Adjust speed of rotation
+  }, 50); // Adjust interval for smoother animation
+}
 </script>
 </html>

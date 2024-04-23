@@ -97,11 +97,13 @@ body {
 }
 
 .bottom-right {
-    margin-right: 40px;
-    position: absolute;
     bottom: 14px;
-    right: 23px;
     color: white; /* Cor do texto */
+    width: 80%;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
 }
 
 /* Estilizando as âncoras */
@@ -226,7 +228,7 @@ body {
   }
 
   .full-screen:nth-child(2) {
-      margin-top: 100vh;
+       margin-top: 100vh;
       /* Margem igual à altura da tela */
       /* Cor de fundo opcional */
   }
@@ -237,11 +239,16 @@ body {
        /* Cor de fundo opcional */
    }
 
+   .full-screen:nth-child(4) {
+    /*margin-top: 100vh;*/
+   }
+
 /* Estilos para a seção "Sobre Mim" */
 
 .section {
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
   
   .overlay {
@@ -315,3 +322,26 @@ strong {
     font-family: "Fira Code", monospace;
 }
 
+.moving-div {
+    position: relative;
+    width: 90%; /* Adjust width and height according to your needs */
+    height: 800px;
+    overflow: hidden;
+  }
+  
+  .moving-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveImage linear infinite alternate; /* Animation definition */
+    transition: left 0.5s, top 0.5s;
+  }
+  
+  @keyframes moveImage {
+    from {
+      transform: translateX(0); /* Starting position */
+    }
+    to {
+      transform: translateX(100%); /* Ending position */
+    }
+  }
