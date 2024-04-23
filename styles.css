@@ -99,7 +99,7 @@ body {
 .bottom-right {
     bottom: 14px;
     color: white; /* Cor do texto */
-    margin-left: 70%;
+    width: 80%;
     align-items: flex-end;
     display: flex;
     justify-content: flex-end;
@@ -128,9 +128,8 @@ body {
 }
 
 .right-side a {
-    font-size: 22px;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-decoration: none;
     color: white;
     writing-mode: vertical-rl; /* Orientação vertical da direita para a esquerda */
@@ -142,8 +141,8 @@ body {
 }
 
 .bottom-right img {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     margin-top: 10px;
 }
 /* Estilos básicos para os links */
@@ -219,38 +218,32 @@ body {
 
   .full-screen {
       height: 100vh;
+      padding-top: 5vh;
 
       /* Ocupa toda a altura da tela */
       /* Cor de fundo opcional */
       text-align: center;
       /* Centraliza conteúdo opcional */
-      padding: 20px;
+      /* padding: 20px; */
       /* Espaçamento interno opcional */
   }
 
   .full-screen:nth-child(2) {
-       margin-top: 170vh;
+       /* margin-top: 5vh; */
       /* Margem igual à altura da tela */
       /* Cor de fundo opcional */
   }
 
    .full-screen:nth-child(3) {
-       margin-top: 100vh;
+       /* margin-top: 100vh; */
        /* Margem igual à altura da tela */
        /* Cor de fundo opcional */
+       /* margin-top: 10vh; */
    }
 
-   .full-screen:nth-child(4) {
-    /*margin-top: 100vh;*/
-   }
 
 /* Estilos para a seção "Sobre Mim" */
 
-.section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
   
   .overlay {
     width: 60%; /* Define a largura da div do texto */
@@ -273,7 +266,7 @@ body {
     margin-bottom: 20px; /* Reduzindo a margem inferior para 20px */
 }
 .section p {
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
     line-height: 1.6;
     flex: 1; /* Ocupa o espaço restante */
@@ -287,24 +280,20 @@ body {
 }
 
 .section{
-    display: auto;
-    margin-top: 600px;
-    padding: 0 0 10em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 600px; */
+    /* padding: 0 0 10em; */
+    width: 100%;
+    height: 85%;
 }
 
 strong {
     color:var(--primary-color);
 }
 
-.sobre-mim {
-    margin-left: 0%;
-    text-align: center;
-    font-size: 10px;
-    width: auto; /* Largura da div */
-    height: auto; /* Mantém a proporção original da imagem */
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa */
-    margin-right: 100px
-}
+
 
 
 .svg{
@@ -325,7 +314,7 @@ strong {
 .moving-div {
     position: relative;
     width: 90%; /* Adjust width and height according to your needs */
-    height: 800px;
+    height: 500px;
     overflow: hidden;
   }
   
@@ -346,12 +335,85 @@ strong {
     }
   }
 
-  .sol{
-
-    top: 150px;
-    right: 170px;
-  }
 
   .teste{
     position: fixed;
+  }
+
+  /*** Estilos para a seção "Projetos" ***/
+
+
+  .container-geral{
+    height: 100%;
+  }
+
+  .container-sobre-mim{
+    height: 100%;
+    
+  }
+
+  .image-sun-container{
+    position: absolute;
+    top: 100px;
+    right: 60px;
+  }
+
+  .contatos{
+    height: 100%;
+    
+  }
+
+  .contatos h1{
+    color: #FFF;
+  }
+
+  .sobre-mim {
+    margin-left: 0%;
+    text-align: center;
+    font-size: 10px;
+    width: auto; /* Largura da div */
+    height: 100%;
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+    margin-right: 100px;
+    position: relative;
+}
+
+
+
+/** Estilos para a seção "carrousel" **/
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  .carousel-item {
+    flex: 0 0 100%;
+    padding: 10px;
+    width: 100px;
+    height: 500px;
+    margin:10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    z-index: 1;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
   }
