@@ -99,7 +99,7 @@ body {
 .bottom-right {
     bottom: 14px;
     color: white; /* Cor do texto */
-    width: 80%;
+    width: 70%;
     align-items: flex-end;
     display: flex;
     justify-content: flex-end;
@@ -313,7 +313,7 @@ strong {
 
 .moving-div {
     position: relative;
-    width: 90%; /* Adjust width and height according to your needs */
+    width: 83.1%; /* Adjust width and height according to your needs */
     height: 500px;
     overflow: hidden;
   }
