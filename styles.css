@@ -293,9 +293,19 @@ strong {
     color:var(--primary-color);
 }
 
+h2{
+    width: 1000px;
+    color: #f3f2f2;
+    font-size: 14px;
+}
 
-
-
+.descricao{
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    height: 300px; /* Altura da div */
+    flex-direction: column;
+}
 .svg{
 
     width: 200px; /* Largura da div */
@@ -316,6 +326,7 @@ strong {
     width: 83.1%; /* Adjust width and height according to your needs */
     height: 500px;
     overflow: hidden;
+    margin-left: 50px;
   }
   
   .moving-image {
@@ -355,7 +366,8 @@ strong {
   .image-sun-container{
     position: absolute;
     top: 100px;
-    right: 60px;
+    right: 100px;
+
   }
 
   .contatos{
@@ -368,6 +380,7 @@ strong {
   }
 
   .sobre-mim {
+    flex-direction: column;
     margin-left: 0%;
     text-align: center;
     font-size: 10px;
@@ -378,42 +391,83 @@ strong {
     position: relative;
 }
 
+/*estilos carrossel*/
 
+  .project-container{
+    width: 300px;
+    height: 400px;
+    background: #31313F;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  .project-header{
+    width: 100%;
+    height: 35%;
+  }
+  
+  .project-body{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  .project-body h3{
+    width: 80%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #A900E4;
+  }
+  
+  .project-body span{
+    width: 90%;
+    font-weight: bold;
+     -webkit-text-stroke: 1px purple;
+     font-family: sans; color: #FFF;
+  }
+  
+  .project-footer{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-footer-container-button{
+    width: 200px;
+    height: 40px;
+    border: 2px solid;
+    border-color: purple;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-footer-container-button a{
+    text-decoration: none;
+    align-self: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+  }
 
-/** Estilos para a seção "carrousel" **/
-.carousel-container {
+  .cont {
+    display: flex; /* Adiciona flexbox para colocar os containers lado a lado */
+    justify-content: space-between; /* Distribui os containers igualmente ao longo do eixo principal */
+    width: 70%;
+    align-items: center;
+}
+
+.sobre-mim{
     display: flex;
-    overflow: hidden;
-    position: relative;
-    width: 80%; /* Adjust as needed */
-    margin: 0 auto;
-  }
-  .carousel {
-    display: flex;
-    transition: transform 0.3s ease;
-  }
-  .carousel-item {
-    flex: 0 0 100%;
-    padding: 10px;
-    width: 100px;
-    height: 500px;
-    margin:10px;
-    text-align: center;
-    border: 1px solid #ccc;
-  }
-  .arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    z-index: 1;
-  }
-  .prev {
-    left: 0;
-  }
-  .next {
-    right: 0;
-  }
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+}
