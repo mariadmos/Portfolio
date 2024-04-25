@@ -97,7 +97,7 @@
                     </p>
                 </div>
                     <div class="overlay-imag">
-                        <img src="./img/menina.png" alt="menina" class="menina">
+                        <img src="./img/eu.png" alt="menina" class="menina">
                         <img src="/img/circulo.svg" alt="Imagem Sobreposta" class="neon-effect">
                     </div>
             </div>
@@ -114,20 +114,20 @@
                     para o meu desenvolvimento como programador.</h2>
                 </div>
                 <div class="moving-div">
-                    <div class="image-planet-container">
-                    <img src="img/figma.svg" alt="Descrição do SVG" class="moving-image image1">
-                    <img src="img/react.svg" alt="Descrição do SVG" class="moving-image image2">
-                    <img src="img/c.svg" alt="Descrição do SVG" class="moving-image image3">
-                    <img src="img/git.svg" alt="Descrição do SVG" class="moving-image image4">
-                    <img src="img/phyton.svg" alt="Descrição do SVG" class="moving-image image5">
-                    <img src="img/js.svg" alt="Descrição do SVG" class="moving-image image6">
-                    <img src="img/Group 1920.svg" alt="Descrição do SVG" class="moving-image image7">
-                    <img src="img/intellij.svg" alt="Descrição do SVG" class="moving-image image8">
-                    <img src="img/photoshop.svg" alt="Descrição do SVG" class="moving-image image9">
-                    <img src="img/vs.svg" alt="Descrição do SVG" class="moving-image image10">
-                </div>
                     <div class="image-sun-container">
                         <img class="sol" src="/img/elementos.svg" alt="Imagem elementos">
+                    </div>
+                    <div class="image-planet-container">
+                        <img src="img/figma.svg" alt="Descrição do SVG" class="moving-image image1">
+                        <img src="img/react.svg" alt="Descrição do SVG" class="moving-image image2">
+                        <img src="img/c.svg" alt="Descrição do SVG" class="moving-image image3">
+                        <img src="img/git.svg" alt="Descrição do SVG" class="moving-image image4">
+                        <img src="img/phyton.svg" alt="Descrição do SVG" class="moving-image image5">
+                        <img src="img/js.svg" alt="Descrição do SVG" class="moving-image image6">
+                        <img src="img/Group 1920.svg" alt="Descrição do SVG" class="moving-image image7">
+                        <img src="img/intellij.svg" alt="Descrição do SVG" class="moving-image image8">
+                        <img src="img/photoshop.svg" alt="Descrição do SVG" class="moving-image image9">
+                        <img src="img/vs.svg" alt="Descrição do SVG" class="moving-image image10">
                     </div>
                </div>
             </div>
@@ -208,7 +208,7 @@
     });
 </script>
 <script>
-const container = document.querySelector('.moving-div');
+const container = document.querySelector('.image-planet-container');
 const image1 = document.querySelector('.image1');
 const image2 = document.querySelector('.image2');
 const image3 = document.querySelector('.image3');
@@ -221,25 +221,25 @@ const image9 = document.querySelector('.image9');
 const image10 = document.querySelector('.image10');
 
 setTimeout(() => {
-    moveImage(image1, 0, 200, 100); // image1 executa órbita elíptica com raio horizontal 200 e raio vertical 100
+    moveImage(image1, 0, 100, 100); // image1 executa órbita elíptica com raio horizontal 200 e raio vertical 100
     setTimeout(() => {
-        moveImage(image2, 0, 180, 120); // image2 executa órbita elíptica com raio horizontal 180 e raio vertical 120
+        moveImage(image2, 0, 150, 120); // image2 executa órbita elíptica com raio horizontal 180 e raio vertical 120
         setTimeout(() => {
-            moveImage(image3, 0, 220, 140); // image3 executa órbita elíptica com raio horizontal 220 e raio vertical 140
+            moveImage(image3, 0, 200, 140); // image3 executa órbita elíptica com raio horizontal 220 e raio vertical 140
             setTimeout(() => {
-                moveImage(image4, 0, 200, 120); // Adicione a órbita elíptica para image4 com raios de 200 e 120
+                moveImage(image4, 0, 250, 120); // Adicione a órbita elíptica para image4 com raios de 200 e 120
                 setTimeout(() => {
-                    moveImage(image5, 0, 220, 100); // Adicione a órbita elíptica para image5 com raios de 220 e 100
+                    moveImage(image5, 0, 300, 100); // Adicione a órbita elíptica para image5 com raios de 220 e 100
                     setTimeout(() => {
-                        moveImage(image6, 0, 180, 140); // Adicione a órbita elíptica para image6 com raios de 180 e 140
+                        moveImage(image6, 0, 350, 140); // Adicione a órbita elíptica para image6 com raios de 180 e 140
                         setTimeout(() => {
-                            moveImage(image7, 0, 240, 120); // Adicione a órbita elíptica para image7 com raios de 240 e 120
+                            moveImage(image7, 0, 400, 120); // Adicione a órbita elíptica para image7 com raios de 240 e 120
                             setTimeout(() => {
-                                moveImage(image8, 0, 200, 110); // Adicione a órbita elíptica para image8 com raios de 200 e 110
+                                moveImage(image8, 0, 450, 110); // Adicione a órbita elíptica para image8 com raios de 200 e 110
                                 setTimeout(() => {
-                                    moveImage(image9, 0, 210, 130); // Adicione a órbita elíptica para image9 com raios de 210 e 130
+                                    moveImage(image9, 0, 500, 130); // Adicione a órbita elíptica para image9 com raios de 210 e 130
                                     setTimeout(() => {
-                                        moveImage(image10, 0, 230, 100); // Adicione a órbita elíptica para image10 com raios de 230 e 100
+                                        moveImage(image10, 0, 550, 100); // Adicione a órbita elíptica para image10 com raios de 230 e 100
                                     }, 2800);
                                 }, 2600);
                             }, 2400);
@@ -264,7 +264,7 @@ function moveImage(img, num, radiusX, radiusY) {
         const newY = centerY + radiusY * Math.sin(angle);
 
         img.style.left = `${newX}px`;
-        img.style.top = `${newY}px`;
+        img.style.top = `${newY-200}px`;
 
         angle += 0.01; // Adjust speed of rotation
     }, 10.0); // Adjust interval for smoother animation
