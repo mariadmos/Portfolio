@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(18, 1, 20);
     font-family: "Fira Code", monospace;
     font-weight: 300;
     display: flex;
@@ -317,10 +317,28 @@ h2{
     color:#fffbfb;
     font-size: 20px; /* Tamanho da fonte */
     margin-top: 20px; /* Espaçamento superior */
-    text-align: center; /* Alinhamento centralizado */
     font-family: "Fira Code", monospace;
 }
 
+.overlay-2 {
+    color: #FFF;
+    width: 95%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+}
+.texto2{
+    width: 60%;
+}
+.overlay-imag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+    position: relative;
+
+    width: 35%; /* Ajuste conforme necessário */
+  }
   
   @keyframes moveImage {
     from {
@@ -495,7 +513,7 @@ h2{
     width: 800px; /* Largura da lanterna */
     height: 800px; /* Altura da lanterna */
     border-radius: 50%; /* Bordas arredondadas para criar um círculo */
-    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.115) 0%, transparent 70%); /* Gradiente radial para simular luz */
+    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.084) 0%, transparent 70%); /* Gradiente radial para simular luz */
     pointer-events: none; /* Evita que a lanterna interfira com elementos clicáveis */
     z-index: 9998; /* Garante que a lanterna esteja abaixo do cursor */
     animation: lanterna-anim 1s ease-out; /* Animação para o efeito de expansão */
