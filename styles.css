@@ -490,7 +490,7 @@ h2{
   .cont {
     display: flex; /* Adiciona flexbox para colocar os containers lado a lado */
     justify-content: space-between; /* Distribui os containers igualmente ao longo do eixo principal */
-    width: 70%;
+    width: 90%;
     align-items: center;
 }
 
@@ -518,7 +518,7 @@ h2{
     width: 800px; /* Largura da lanterna */
     height: 800px; /* Altura da lanterna */
     border-radius: 50%; /* Bordas arredondadas para criar um círculo */
-    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.084) 0%, transparent 70%); /* Gradiente radial para simular luz */
+    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.238) 0%, transparent 70%); /* Gradiente radial para simular luz */
     pointer-events: none; /* Evita que a lanterna interfira com elementos clicáveis */
     z-index: 9998; /* Garante que a lanterna esteja abaixo do cursor */
     animation: lanterna-anim 1s ease-out; /* Animação para o efeito de expansão */
