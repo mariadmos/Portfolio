@@ -14,7 +14,8 @@
             <div class="right-side">
                 <a href="#first" class="nav-link">Inicio</a>
                 <a href="#second" class="nav-link">Sobre Mim</a>
-                <a href="#third" class="nav-link">Projetos</a>
+                <a href="#third" class="nav-link">Habilidades</a>
+                <a href="#fourth" class="nav-link">Projetos</a>
             </div>
         </div>
         <div id="first" class="full-screen">
@@ -67,62 +68,7 @@
             </div>
         </div>
         <div id="second" class="sobre-mim full-screen">
-            <div class="cont">
-            <div class="project-container">
-                <div class="project-header">
-                  
-                </div>
-                <div class="project-body">
-                  <h3>
-                  Conversor
-                  </h3>
-                  <span>
-                    A live Geolocation app for finding tweets and twitter users around you.
-                  </span>
-                </div>
-                <div class="project-footer">
-                    <div class="project-footer-container-button">
-                    <a  href="https://github.com/buildbreakdo/giticon/tree/master" target="_blank"> Github Repo</a>
-                    </div>
-                </div>
-              </div>
-              <div class="project-container">
-                <div class="project-header">
-                  
-                </div>
-                <div class="project-body">
-                  <h3>
-                  Conversor
-                  </h3>
-                  <span>
-                    A live Geolocation app for finding tweets and twitter users around you.
-                  </span>
-                </div>
-                <div class="project-footer">
-                    <div class="project-footer-container-button">
-                    <a href="https://github.com/buildbreakdo/giticon/tree/master" target="_blank"> Github Repo</a>
-                    </div>
-                </div>
-              </div>
-              <div class="project-container">
-                <div class="project-header">
-                  
-                </div>
-                <div class="project-body">
-                  <h3>
-                  Conversor
-                  </h3>
-                  <span>
-                    A live Geolocation app for finding tweets and twitter users around you.
-                  </span>
-                </div>
-                <div class="project-footer">
-                    <div class="project-footer-container-button">
-                    <a href="https://github.com/buildbreakdo/giticon/tree/master" target="_blank"> Github Repo</a>
-                    </div>
-                </div>
-              </div>
-            </div>
+            
         </div>
         
 
@@ -136,6 +82,7 @@
                     para o meu desenvolvimento como programador.</h2>
                 </div>
                 <div class="moving-div">
+                    <div class="image-planet-container">
                     <img src="img/figma.svg" alt="Descrição do SVG" class="moving-image image1">
                     <img src="img/react.svg" alt="Descrição do SVG" class="moving-image image2">
                     <img src="img/c.svg" alt="Descrição do SVG" class="moving-image image3">
@@ -146,13 +93,74 @@
                     <img src="img/intellij.svg" alt="Descrição do SVG" class="moving-image image8">
                     <img src="img/photoshop.svg" alt="Descrição do SVG" class="moving-image image9">
                     <img src="img/vs.svg" alt="Descrição do SVG" class="moving-image image10">
+                </div>
                     <div class="image-sun-container">
                         <img class="sol" src="/img/elementos.svg" alt="Imagem elementos">
                     </div>
                </div>
             </div>
         </div>
+        <div id="fourth" class="projetos full-screen">
+            <div class="cont">
+                <div class="project-container">
+                    <div class="project-header">
+                      
+                    </div>
+                    <div class="project-body">
+                      <h3>
+                      Conversor
+                      </h3>
+                      <span>
+                        A live Geolocation app for finding tweets and twitter users around you.
+                      </span>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-footer-container-button">
+                        <a  href="https://github.com/buildbreakdo/giticon/tree/master" target="_blank"> Github Repo</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="project-container">
+                    <div class="project-header">
+                      
+                    </div>
+                    <div class="project-body">
+                      <h3>
+                      Conversor
+                      </h3>
+                      <span>
+                        A live Geolocation app for finding tweets and twitter users around you.
+                      </span>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-footer-container-button">
+                        <a href="https://github.com/buildbreakdo/giticon/tree/master" target="_blank"> Github Repo</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="project-container">
+                    <div class="project-header">
+                      
+                    </div>
+                    <div class="project-body">
+                      <h3>
+                      Conversor
+                      </h3>
+                      <span>
+                        A live Geolocation app for finding tweets and twitter users around you.
+                      </span>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-footer-container-button">
+                        <a href="https://github.com/buildbreakdo/giticon/tree/master" target="_blank"> Github Repo</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
     </div>
+    <div class="cursor"></div>
+    <script src="script.js"></script>
 </body>
 <script>
     // Função para rolar para a âncora correspondente quando clicada
@@ -252,9 +260,19 @@ function moveImage(img, num, radiusX, radiusY) {
     }
 </script>
 <script>
+const cursor = document.querySelector('.cursor');
+const lanterna = document.createElement('div');
+lanterna.classList.add('lanterna');
+document.body.appendChild(lanterna);
 
+document.addEventListener('mousemove', (e) => {
+    cursor.style.top = `${e.clientY}px`; /* Move o cursor verticalmente com o mouse */
+    cursor.style.left = `${e.clientX}px`; /* Move o cursor horizontalmente com o mouse */
 
-
+    // Move a lanterna para a posição do cursor
+    lanterna.style.top = `${e.clientY - 0}px`; /* Ajuste conforme necessário */
+    lanterna.style.left = `${e.clientX - 0}px`; /* Ajuste conforme necessário */
+});
 
 </script>
 
