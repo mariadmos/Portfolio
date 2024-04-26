@@ -10,6 +10,18 @@
 
 <body>
     <div class="container-geral">
+        <div id="mobile-menu-button">
+            <span>
+                >
+            </span>
+        </div>
+        <div id="mobile-menu-items">
+            <a href="#first" class="nav-link">Inicio</a>
+            <a href="#second" class="nav-link">Sobre Mim</a>
+            <a href="#third" class="nav-link">Habilidades</a>
+            <a href="#fourth" class="nav-link">Projetos</a>
+        </div>
+
         <div class="menu-sobre-mim">
             <div class="right-side">
                 <a href="#first" class="nav-link">Inicio</a>
@@ -28,7 +40,7 @@
                         <img src="/img/circulo.svg" alt="Imagem Sobreposta" class="neon-effect">
                     </div>
                     <div class="overlay">
-                        <h1 class="titulo">I am <strong>Maria Dalva Martins</strong></h1>
+                        <h1 class="titulo">Sou <strong>Maria Dalva Martins</strong></h1>
                         <p>
                             Olá, sou Maria Dalva Martins, uma entusiasta de tecnologia e apaixonada por desenvolvimento
                             web. Atualmente, estudo Bacharelado em Ciência da Computação com ênfase em Engenharia da
@@ -51,14 +63,14 @@
                 </div>
             </div>
             <div class="bottom-left">
-                <span class="orange-text">Dev front-end</span><br>
+                <span class="orange-text">Dev</span><br>
                 <span class="gray-text">From BR</span>
             </div>
         </div>
         <div id="second" class="sobre-mim full-screen">
             <div class="overlay-2">
                     <div class="texto2">
-                    <h1 class="titulo">I am <strong>Maria Dalva Martins</strong></h1>
+                    <h1 class="titulo">Sobre<strong>Mim</strong></h1>
                     <p>
                         Olá, sou Maria Dalva Martins, uma entusiasta de tecnologia e apaixonada por desenvolvimento
                         web. Atualmente, estudo Bacharelado em Ciência da Computação com ênfase em Engenharia da
@@ -96,8 +108,7 @@
             <div class="container-sobre-mim">
                 <div class="descricao">
                 <h1 class="titulo">Minhas<strong>Habilidades</strong></h1>
-                <h2>Nesta seção, compartilho minhas experiências com as linguagens de programação que utilizo
-                    diariamente.
+                <h2>Com habilidades em <strong>JavaScript, C, Python, Assembly</strong>, estou pronta para novos desafios.
                     Desde a imersão em projetos desafiadores até o constante aprendizado, cada experiência contribui
                     para o meu desenvolvimento como programador.</h2>
                 </div>
@@ -124,7 +135,7 @@
             <div class="cont">
                 <div class="project-container">
                     <div class="project-header">
-                      
+                        <a href="https://androide.vercel.app/" target="_blank"><img src="/img/androide.png"alt="androide"width="300" height="150"></a>
                     </div>
                     <div class="project-body">
                       <h3>
@@ -136,13 +147,13 @@
                     </div>
                     <div class="project-footer">
                         <div class="project-footer-container-button">
-                        <a  href="https://github.com/buildbreakdo/giticon/tree/master" target="_blank"> Github Repo</a>
+                        <a  href="https://androide.vercel.app/" target="_blank"> Jogar</a>
                         </div>
                     </div>
                   </div>
                   <div class="project-container">
                     <div class="project-header">
-                      
+                        <a href="https://jogo-de-carros-urtt.vercel.app/" target="_blank"><img src="/img/carrinhos.png"alt="androide"width="300" height="150"></a>
                     </div>
                     <div class="project-body">
                       <h3>
@@ -154,13 +165,13 @@
                     </div>
                     <div class="project-footer">
                         <div class="project-footer-container-button">
-                        <a href="https://github.com/buildbreakdo/giticon/tree/master" target="_blank"> Github Repo</a>
+                        <a href="https://jogo-de-carros-urtt.vercel.app/" target="_blank"> Jogar</a>
                         </div>
                     </div>
                   </div>
                   <div class="project-container">
                     <div class="project-header">
-                      
+                        <a href="https://androide.vercel.app/" target="_blank"><img src="/img/androide.png"alt="androide"width="300" height="150"></a>
                     </div>
                     <div class="project-body">
                       <h3>
@@ -172,7 +183,7 @@
                     </div>
                     <div class="project-footer">
                         <div class="project-footer-container-button">
-                        <a href="https://github.com/buildbreakdo/giticon/tree/master" target="_blank"> Github Repo</a>
+                        <a href="https://androide.vercel.app/" target="_blank"> Jogar</a>
                         </div>
                     </div>
                   </div>
@@ -293,6 +304,15 @@ document.addEventListener('mousemove', (e) => {
     lanterna.style.top = `${e.clientY - 0}px`; /* Ajuste conforme necessário */
     lanterna.style.left = `${e.clientX - 0}px`; /* Ajuste conforme necessário */
 });
+
+document.getElementById('mobile-menu-button').addEventListener('click', function () {
+        var menuItems = document.getElementById('mobile-menu-items');
+        if (menuItems.style.display === 'none') {
+            menuItems.style.display = 'flex';
+        } else {
+            menuItems.style.display = 'none';
+        }
+    });
 
 </script>
 

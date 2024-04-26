@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 :root {
     --primary-color: #bf00ff;
@@ -455,7 +457,7 @@ h2{
   .project-body span{
     width: 90%;
     font-weight: bold;
-     -webkit-text-stroke: 1px purple;
+     -webkit-text-stroke: 1px rgba(128, 0, 128, 0.17);
      font-family: sans; color: #FFF;
   }
   
@@ -494,6 +496,10 @@ h2{
     align-items: center;
 }
 
+.project-body span{
+    font-family: "Poppins", sans-serif;
+}
+
 .projetos{
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
@@ -518,7 +524,7 @@ h2{
     width: 800px; /* Largura da lanterna */
     height: 800px; /* Altura da lanterna */
     border-radius: 50%; /* Bordas arredondadas para criar um círculo */
-    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.238) 0%, transparent 70%); /* Gradiente radial para simular luz */
+    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.075) 0%, transparent 70%); /* Gradiente radial para simular luz */
     pointer-events: none; /* Evita que a lanterna interfira com elementos clicáveis */
     z-index: 9998; /* Garante que a lanterna esteja abaixo do cursor */
     animation: lanterna-anim 1s ease-out; /* Animação para o efeito de expansão */
@@ -535,5 +541,91 @@ h2{
     to {
         transform: translate(-50%, -50%) scale(1.2); /* Torna-se visível com escala maior e centralizada */
         opacity: 0; /* Torna-se completamente transparente */
+    }
+}
+
+/* Add this to your CSS file */
+#mobile-menu-button {
+    display: none;
+}
+
+#mobile-menu-button span {
+    font-size: 30px;
+    font-weight: bold;
+    align-self: center;
+    width: 100%;
+}
+
+#mobile-menu-items {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    display: none;
+    /* Hide it by default */
+    flex-direction: column;
+    animation: slide-up 0.5s ease;
+}
+
+
+/* Show the mobile menu and hide the desktop menu on small screens */
+@media (max-width: 600px) {
+    #mobile-menu-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #FFF;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        /* Hide it by default */
+        display: visible;
+    }
+
+    #mobile-menu-items {
+        position: fixed;
+        bottom: 70px;
+        right: 20px;
+        display: none;
+        /* Hide it by default */
+        flex-direction: column;
+        animation: slide-up 0.5s ease;
+    }
+
+    .nav-link {
+        /* /* margin-bottom: 10px;
+            margin-bottom: 10px;
+            border: 2px solid; */
+             
+            border-radius: 8px;
+            padding: 8px;
+            font-size: 26px;
+            font-weight: bold;
+            display: visible;
+    }
+    
+
+    .right-side {
+        display: none;
+    }
+
+    #mobile-menu-button {
+        display: block;
+    }
+}
+
+/* Add this animation */
+@keyframes slide-up {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
