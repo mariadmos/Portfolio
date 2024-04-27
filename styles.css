@@ -21,9 +21,11 @@ body {
     0% {
         filter: brightness(150%);
     }
+
     50% {
         filter: brightness(100%);
     }
+
     100% {
         filter: brightness(150%);
     }
@@ -33,9 +35,11 @@ body {
     0% {
         filter: brightness(110%);
     }
+
     50% {
         filter: brightness(100%);
     }
+
     100% {
         filter: brightness(110%);
     }
@@ -60,19 +64,21 @@ body {
 }
 
 
-.menu-sobre-mim{
-        position: fixed;
-        top: 50%;
-        right: 0px;
-
+.menu-sobre-mim {
+    position: fixed;
+    top: 50%;
+    right: 0px;
 }
+
 /* Posicionando elementos nos cantos da tela */
 .top-left {
-    font-size: 19px; /* Tamanho do texto do título */
+    font-size: 19px;
+    /* Tamanho do texto do título */
     position: absolute;
     top: 14px;
     left: 23px;
-    color: white; /* Cor do texto */
+    color: white;
+    /* Cor do texto */
 }
 
 .top-right {
@@ -81,14 +87,15 @@ body {
     position: absolute;
     top: 14px;
     right: 23px;
-    color: white; /* Cor do texto */
+    color: white;
+    /* Cor do texto */
 }
 
 .bottom-left {
     display: flex;
     flex-direction: column;
     text-align: left;
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
 .right-side {
@@ -96,12 +103,14 @@ body {
     top: 50%;
     right: 23px;
     transform: translateY(-50%);
-    color: white; /* Cor do texto */
+    color: white;
+    /* Cor do texto */
 }
 
 .bottom-right {
     bottom: 14px;
-    color: white; /* Cor do texto */
+    color: white;
+    /* Cor do texto */
     width: 70%;
     align-items: flex-end;
     display: flex;
@@ -114,12 +123,17 @@ body {
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
-    color: white; /* Cor dos links */
+    color: white;
+    /* Cor dos links */
 }
 
 
-.top-left, .top-right, .bottom-left, .right-side, .bottom-right {
-    color:var(--primary-color);
+.top-left,
+.top-right,
+.bottom-left,
+.right-side,
+.bottom-right {
+    color: var(--primary-color);
 }
 
 .orange-text {
@@ -135,8 +149,9 @@ body {
     margin-bottom: 10px;
     text-decoration: none;
     color: white;
-    writing-mode: vertical-rl; /* Orientação vertical da direita para a esquerda */
-     /* Mantém o texto na orientação vertical */
+    writing-mode: vertical-rl;
+    /* Orientação vertical da direita para a esquerda */
+    /* Mantém o texto na orientação vertical */
 }
 
 .bottom-right a {
@@ -148,6 +163,7 @@ body {
     height: 30px;
     margin-top: 10px;
 }
+
 /* Estilos básicos para os links */
 .nav-link {
     display: inline-block;
@@ -155,12 +171,10 @@ body {
     position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(
-        to right,
-        #d614eb,
-        #d614eb 50%,
-        #f3f2f2 50%
-    );
+    background-image: linear-gradient(to right,
+            #d614eb,
+            #d614eb 50%,
+            #f3f2f2 50%);
     background-size: 200% 100%;
     background-position: -100%;
     transition: all 0.3s ease-in-out;
@@ -183,6 +197,7 @@ body {
 .nav-link:hover {
     background-position: 0;
 }
+
 /* Estilo da barra antes do link ao passar o mouse */
 .nav-link:hover::before {
     width: 100%;
@@ -190,14 +205,18 @@ body {
 
 
 .overlay-image:hover img {
-    filter: brightness(150%); /* Adicionado o filtro de brilho ao passar o mouse */
+    filter: brightness(150%);
+    /* Adicionado o filtro de brilho ao passar o mouse */
 }
 
 
 .bottom-right img:hover {
-    transform: scale(1.2); /* Aumenta o tamanho da imagem em 20% no hover */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
-    filter: brightness(2000%); /* Aumenta o brilho da imagem em 20% no hover */
+    transform: scale(1.2);
+    /* Aumenta o tamanho da imagem em 20% no hover */
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição suave de 0.3 segundos */
+    filter: brightness(2000%);
+    /* Aumenta o brilho da imagem em 20% no hover */
 }
 
 .menina {
@@ -207,7 +226,8 @@ body {
     margin-top: -13%;
     width: 75%;
 }
-    /*transition: filter 0.5s ease; /* Adiciona uma transição suave 
+
+/*transition: filter 0.5s ease; /* Adiciona uma transição suave 
     animation: mudarCor 5s infinite linear; /* Inicia a animação de mudança de cor 
 }
 
@@ -219,107 +239,124 @@ body {
 
 /* Codigo de estilo do Onii */
 
-  .full-screen {
-      height: 100vh;
-      padding-top: 5vh;
+.full-screen {
+    height: 100vh;
+    padding-top: 5vh;
 
-      /* Ocupa toda a altura da tela */
-      /* Cor de fundo opcional */
-      text-align: center;
-      /* Centraliza conteúdo opcional */
-      /* padding: 20px; */
-      /* Espaçamento interno opcional */
-  }
+    /* Ocupa toda a altura da tela */
+    /* Cor de fundo opcional */
+    text-align: center;
+    /* Centraliza conteúdo opcional */
+    /* padding: 20px; */
+    /* Espaçamento interno opcional */
+}
 
-  .full-screen:nth-child(2) {
-       /* margin-top: 5vh; */
-      /* Margem igual à altura da tela */
-      /* Cor de fundo opcional */
-  }
+.full-screen:nth-child(2) {
+    /* margin-top: 5vh; */
+    /* Margem igual à altura da tela */
+    /* Cor de fundo opcional */
+}
 
-   .full-screen:nth-child(3) {
-       /* margin-top: 100vh; */
-       /* Margem igual à altura da tela */
-       /* Cor de fundo opcional */
-       /* margin-top: 10vh; */
-   }
+.full-screen:nth-child(3) {
+    /* margin-top: 100vh; */
+    /* Margem igual à altura da tela */
+    /* Cor de fundo opcional */
+    /* margin-top: 10vh; */
+}
 
 
 /* Estilos para a seção "Sobre Mim" */
 
-  
-  .overlay {
-    width: 60%; /* Define a largura da div do texto */
-    text-align: left; /* Alinha o texto à esquerda */
-  }
-  
-  .overlay-image {
+
+.overlay {
+    width: 60%;
+    /* Define a largura da div do texto */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+.overlay-image {
     display: flex;
     align-items: center;
     justify-content: center;
     top: 40px;
     position: relative;
 
-    width: 35%; /* Ajuste conforme necessário */
-  }
+    width: 35%;
+    /* Ajuste conforme necessário */
+}
 
 .section h1 {
     font-size: 60px;
     color: #fffbfb;
-    margin-bottom: 20px; /* Reduzindo a margem inferior para 20px */
+    margin-bottom: 20px;
+    /* Reduzindo a margem inferior para 20px */
 }
+
 .section p {
     font-size: 14px;
     color: #ffffff;
     line-height: 1.6;
-    flex: 1; /* Ocupa o espaço restante */
-    padding-right: 20px; /* Adiciona um espaçamento à direita do texto */
+    flex: 1;
+    /* Ocupa o espaço restante */
+    padding-right: 20px;
+    /* Adiciona um espaçamento à direita do texto */
 
 }
 
 .container-perfil {
     display: flex;
-    align-items: center; /* Alinha os itens verticalmente */
+    align-items: center;
+    /* Alinha os itens verticalmente */
 }
 
-.section{
+.section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* margin-top: 600px; */
+    margin-top:6%;
     /* padding: 0 0 10em; */
     width: 100%;
     height: 85%;
 }
 
 strong {
-    color:var(--primary-color);
+    color: var(--primary-color);
 }
 
-h2{
+h2 {
     width: 1000px;
     color: #f3f2f2;
     font-size: 14px;
 }
 
-.descricao{
+.descricao {
     display: flex;
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    height: 300px; /* Altura da div */
+    justify-content: center;
+    /* Alinha horizontalmente */
+    align-items: center;
+    /* Alinha verticalmente */
+    height: 300px;
+    /* Altura da div */
     flex-direction: column;
 }
-.svg{
 
-    width: 200px; /* Largura da div */
-    height: 200px; /* Altura da div */
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+.svg {
+
+    width: 200px;
+    /* Largura da div */
+    height: 200px;
+    /* Altura da div */
+    overflow: hidden;
+    /* Esconde o conteúdo que ultrapassa */
 }
 
 .sobre-mim h2 {
-    color:#fffbfb;
-    font-size: 20px; /* Tamanho da fonte */
-    margin-top: 20px; /* Espaçamento superior */
+    color: #fffbfb;
+    font-size: 20px;
+    /* Tamanho da fonte */
+    margin-top: 20px;
+    /* Espaçamento superior */
     font-family: "Fira Code", monospace;
 }
 
@@ -330,101 +367,114 @@ h2{
     display: flex;
     flex-direction: row;
 }
-.texto2{
+
+.texto2 {
     width: 60%;
 }
-.overlay-imag{
+
+.overlay-imag {
     display: flex;
     align-items: center;
     justify-content: center;
     top: 40px;
     position: relative;
 
-    width: 35%; /* Ajuste conforme necessário */
-  }
-  
-  @keyframes moveImage {
+    width: 35%;
+    /* Ajuste conforme necessário */
+}
+
+@keyframes moveImage {
     from {
-      transform: translateX(0); /* Starting position */
+        transform: translateX(0);
+        /* Starting position */
     }
+
     to {
-      transform: translateX(100%); /* Ending position */
+        transform: translateX(100%);
+        /* Ending position */
     }
-  }
+}
 
 
-  .teste{
+.teste {
     position: fixed;
-  }
+}
 
-  /*** Estilos para a seção "Projetos" ***/
+/*** Estilos para a seção "Projetos" ***/
 
 
-  .container-geral{
+.container-geral {
     height: 100%;
-  }
+}
 
-  .container-sobre-mim{
+.container-sobre-mim {
     height: 100%;
-    
-  }
 
-  .image-sun-container{
+}
+
+.image-sun-container {
     top: 100px;
     z-index: 2;
-  }
+}
 
-  .image-planet-container{
+.image-planet-container {
     width: 500%;
     position: relative;
     z-index: 1;
-  }
+}
 
-  .moving-div {
+.moving-div {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
     height: 500px;
     overflow: hidden;
-    display: flex; /* Define o container como flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    /* Define o container como flexível */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
     text-align: center;
 }
-  .moving-image {
+
+.moving-image {
     position: absolute;
     top: 0;
     left: 0;
-    animation: moveImage linear infinite alternate; /* Animation definition */
+    animation: moveImage linear infinite alternate;
+    /* Animation definition */
     transition: left 0.01s, top .01s;
-  }
+}
 
 
-  .contatos{
+.contatos {
     height: 100%;
-    
-  }
 
-  .contatos h1{
+}
+
+.contatos h1 {
     color: #FFF;
-  }
+}
 
-  .projetos{
+.projetos {
     flex-direction: column;
     margin-left: 0%;
     text-align: center;
     font-size: 10px;
-    width: auto; /* Largura da div */
+    width: auto;
+    /* Largura da div */
     height: 100%;
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+    overflow: hidden;
+    /* Esconde o conteúdo que ultrapassa */
     margin-right: 100px;
     position: relative;
 }
 
 /*estilos carrossel*/
 
-  .project-container{
+.project-container {
     width: 300px;
     height: 400px;
     background: #31313F;
@@ -432,46 +482,47 @@ h2{
     flex-direction: column;
     border-radius: 8px;
     display: block;
-  }
-  
-  .project-header{
+}
+
+.project-header {
     width: 100%;
     height: 35%;
-  }
-  
-  .project-body{
+}
+
+.project-body {
     width: 100%;
     height: 35%;
     display: flex;
     flex-direction: column;
     padding-right: 20px;
     padding-left: 20px;
-  }
-  
-  .project-body h3{
+}
+
+.project-body h3 {
     width: 80%;
     font-weight: bold;
     font-size: 20px;
     color: #A900E4;
-  }
-  
-  .project-body span{
+}
+
+.project-body span {
     width: 90%;
     font-weight: bold;
-     -webkit-text-stroke: 1px rgba(128, 0, 128, 0.17);
-     font-family: sans; color: #FFF;
-  }
-  
-  .project-footer{
+    -webkit-text-stroke: 1px rgba(128, 0, 128, 0.17);
+    font-family: sans;
+    color: #FFF;
+}
+
+.project-footer {
     width: 100%;
     height: 30%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-  
-  .project-footer-container-button{
+}
+
+.project-footer-container-button {
     width: 200px;
     height: 40px;
     border: 2px solid;
@@ -480,30 +531,33 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .project-footer-container-button a{
+}
+
+.project-footer-container-button a {
     text-decoration: none;
     align-self: center;
     color: #FFF;
     font-weight: bold;
     font-size: 14px;
-  }
+}
 
-  .cont {
-    display: flex; /* Adiciona flexbox para colocar os containers lado a lado */
-    justify-content: space-between; /* Distribui os containers igualmente ao longo do eixo principal */
+.cont {
+    display: flex;
+    /* Adiciona flexbox para colocar os containers lado a lado */
+    justify-content: space-between;
+    /* Distribui os containers igualmente ao longo do eixo principal */
     width: 90%;
     align-items: center;
 }
 
-.project-body span{
+.project-body span {
     font-family: "Poppins", sans-serif;
 }
 
-.projetos{
+.projetos {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
     align-items: center;
 }
 
@@ -511,37 +565,59 @@ h2{
 /* Estilos para o cursor */
 .cursor {
     position: fixed;
-    width: 20px; /* Largura da luz inicial */
-    height: 20px; /* Altura da luz inicial */
-    background-color: transparent; /* Cor de fundo transparente */
-    border-radius: 50%; /* Bordas arredondadas para criar um círculo */
-    pointer-events: none; /* Evita que o cursor interfira com elementos clicáveis */
-    z-index: 9999; /* Garante que o cursor esteja sempre acima de outros elementos */
-    transform: scale(0); /* Começa invisível */
+    width: 20px;
+    /* Largura da luz inicial */
+    height: 20px;
+    /* Altura da luz inicial */
+    background-color: transparent;
+    /* Cor de fundo transparente */
+    border-radius: 50%;
+    /* Bordas arredondadas para criar um círculo */
+    pointer-events: none;
+    /* Evita que o cursor interfira com elementos clicáveis */
+    z-index: 9999;
+    /* Garante que o cursor esteja sempre acima de outros elementos */
+    transform: scale(0);
+    /* Começa invisível */
 }
 
 .lanterna {
     position: fixed;
-    width: 800px; /* Largura da lanterna */
-    height: 800px; /* Altura da lanterna */
-    border-radius: 50%; /* Bordas arredondadas para criar um círculo */
-    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.267) 0%, transparent 70%); /* Gradiente radial para simular luz */
-    pointer-events: none; /* Evita que a lanterna interfira com elementos clicáveis */
-    z-index: 9998; /* Garante que a lanterna esteja abaixo do cursor */
-    animation: lanterna-anim 1s ease-out; /* Animação para o efeito de expansão */
-    transform: translate(-50%, -50%) scale(1.2); /* Centraliza e ajusta o tamanho da lanterna */
-    left: 50%; /* Centraliza horizontalmente */
-    top: 50%; /* Centraliza verticalmente */
+    width: 800px;
+    /* Largura da lanterna */
+    height: 800px;
+    /* Altura da lanterna */
+    border-radius: 50%;
+    /* Bordas arredondadas para criar um círculo */
+    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.075) 0%, transparent 70%);
+    /* Gradiente radial para simular luz */
+    pointer-events: none;
+    /* Evita que a lanterna interfira com elementos clicáveis */
+    z-index: 9998;
+    /* Garante que a lanterna esteja abaixo do cursor */
+    animation: lanterna-anim 1s ease-out;
+    /* Animação para o efeito de expansão */
+    transform: translate(-50%, -50%) scale(1.2);
+    /* Centraliza e ajusta o tamanho da lanterna */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    top: 50%;
+    /* Centraliza verticalmente */
 }
 
 @keyframes lanterna-anim {
     from {
-        transform: translate(-50%, -50%) scale(0.8); /* Começa com escala menor e centralizada */
-        opacity: 1; /* Começa totalmente opaca */
+        transform: translate(-50%, -50%) scale(0.8);
+        /* Começa com escala menor e centralizada */
+        opacity: 1;
+        /* Começa totalmente opaca */
     }
+
     to {
-        transform: translate(-50%, -50%) scale(1.2); /* Torna-se visível com escala maior e centralizada */
-        opacity: 0; /* Torna-se completamente transparente */
+        transform: translate(-50%, -50%) scale(1.2);
+        /* Torna-se visível com escala maior e centralizada */
+        opacity: 0;
+        /* Torna-se completamente transparente */
     }
 }
 
@@ -565,6 +641,7 @@ h2{
     /* Hide it by default */
     flex-direction: column;
     animation: slide-up 0.5s ease;
+    z-index: 999;
 }
 
 
@@ -577,13 +654,16 @@ h2{
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: #FFF;
-        display: none;
         justify-content: center;
         align-items: center;
         align-content: center;
+        display: block;
         /* Hide it by default */
-        display: visible;
+        z-index: 999;
+    }
+
+    #mobile-menu-button img {
+        z-index: 999;
     }
 
     #mobile-menu-items {
@@ -597,17 +677,16 @@ h2{
     }
 
     .nav-link {
-        /* /* margin-bottom: 10px;
-            margin-bottom: 10px;
-            border: 2px solid; */
-             
-            border-radius: 8px;
-            padding: 8px;
-            font-size: 26px;
-            font-weight: bold;
-            display: visible;
+        border-radius: 8px;
+        padding: 8px;
+        font-size: 26px;
+        font-weight: bold;
+        z-index: 999;
     }
-    
+
+    .nav-link:hover {
+        background-color: #bf00ff;
+    }
 
     .right-side {
         display: none;
@@ -631,6 +710,17 @@ h2{
     }
 }
 
+
+.sol {
+    width: 100%;
+    height: 100%;
+}
+
+.descricao h2 {
+    font-size: 14px;
+    width: 100%;
+}
+
 /* Show responsivity */
 @media (max-width: 600px) {
     .container-perfil {
@@ -639,47 +729,90 @@ h2{
         align-items: center;
         /* Alinha os itens verticalmente */
     }
-    
-    .section h1{
+
+    .section h1 {
         font-size: 30px;
-    }
-    
-    .overlay {
-        padding-top: 60px;
-        width: 100%; /* Define a largura da div do texto */
-        text-align: center; /* Alinha o texto ao centro */
-    }
-    
-    .texto2{
-        width: 100%;
-    }
-    
-    .texto2 h1{
-        font-size: 30px;
-    }
-    
-    .overlay-2 {
-            color: #FFF;
-                width: 100%;
-                text-align: right;
-                display: flex;
-                flex-direction: column;
-    }
-    
-    .texto2 p{
-        font-size: 14px;
-    }
-    
-    .overlay-imag{
-        display: none;
-    }
-    
     }
 
-/* For Tablet View */
-@media screen and (min-device-width: 768px) 
-and (max-device-width: 1024px) {
-    .overlay-2{
-        flex-wrap: wrap;
+    .overlay {
+        padding-top: 60px;
+        width: 100%;
+        /* Define a largura da div do texto */
+        text-align: center;
+        /* Alinha o texto ao centro */
     }
+
+    .texto2 {
+        width: 100%;
+    }
+
+    .texto2 h1 {
+        font-size: 30px;
+    }
+
+    .overlay-2 {
+        color: #FFF;
+        width: 100%;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto2 p {
+        font-size: 14px;
+    }
+
+    .overlay-imag {
+        display: none;
+    }
+
+
+    /* Estilos para a seção "Habilidades" */
+
+    .descricao h1 {
+        font-size: 30px;
+    }
+
+    .sol {
+        width: 100%;
+        height: 100%;
+    }
+
+    .project-container{
+        display: none;
+    }
+
+    .projects-mobile ul li{
+        color: #FFF;
+        font-size: 20px;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    .projects-mobile ul li a{
+
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(78, 78, 78, 0.7);
+    /* White background with 70% opacity */
+    z-index: 996;
+    /* Below the menu and menu button */
+    display: none;
+    /* Hidden by default */
 }
