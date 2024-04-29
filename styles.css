@@ -14,6 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -242,12 +244,12 @@ body {
 .full-screen {
     height: 100vh;
     padding-top: 5vh;
-
+    padding-left: 8px;
+    padding-right: 8px;
     /* Ocupa toda a altura da tela */
     /* Cor de fundo opcional */
     text-align: center;
     /* Centraliza conteúdo opcional */
-    /* padding: 20px; */
     /* Espaçamento interno opcional */
 }
 
@@ -314,7 +316,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top:6%;
+    /* margin-top: 600px; */
     /* padding: 0 0 10em; */
     width: 100%;
     height: 85%;
@@ -412,7 +414,14 @@ h2 {
 
 }
 
+
+
 .image-sun-container {
+    top: 100px;
+    z-index: 2;
+}
+
+.mage-sun-container2{
     top: 100px;
     z-index: 2;
 }
@@ -644,12 +653,81 @@ h2 {
     z-index: 999;
 }
 
+.projects-mobile{
+    display: none;
+}
+
+.content{
+    display: flex;
+    height: 70%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.descricao-projetos{
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.descricao-projetos h1{
+    font-size: 30px;
+}
+
+.project-container{
+    margin: 10px;
+    width: 30%;
+}
+
+.project-container img{
+    border-radius: 10px;
+    width: 100%;
+}
+
 
 /* Show the mobile menu and hide the desktop menu on small screens */
 @media (max-width: 600px) {
+    
+
+    .image-sun-container2{
+        position: absolute;
+        position: absolute;
+        top:20px;
+        z-index: 2;
+    }
+}
+
+/* Add this animation */
+@keyframes slide-up {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.sol {
+    width: 100%;
+    height: 100%;
+}
+
+.descricao h2 {
+    font-size: 14px;
+    width: 100%;
+}
+
+
+@media (max-width: 800px){
+
     #mobile-menu-button {
         position: fixed;
-        bottom: 20px;
+        bottom: 40px;
         right: 20px;
         width: 50px;
         height: 50px;
@@ -695,30 +773,125 @@ h2 {
     #mobile-menu-button {
         display: block;
     }
-}
 
-/* Add this animation */
-@keyframes slide-up {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
+    #mobile-menu-button {
+        display: block;
     }
 
-    100% {
-        transform: translateY(0);
-        opacity: 1;
+   
+    .right-side {
+        display: none;
     }
-}
+    .projetos{
+        width: 100%;
+    }
+    .projects-mobile{
+        margin: 0px;
+        padding: 0px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 90%;
+        width: 100%;
+        display: block;
+    }
+
+    .menu-projects{
+        height: 100%;
+        width: 100%;
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .menu-projects span{
+        background-color: #bf00ff;
+        height: 20%;
+        width: 85%;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .menu-projects span a{
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 700;
+        color: #FFF;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .project-container{
+        display: none;
+    }
 
 
-.sol {
-    width: 100%;
-    height: 100%;
-}
+    .descricao-projetos{
+        width: 90%;
+        height: 10%;
+    }
 
-.descricao h2 {
-    font-size: 14px;
-    width: 100%;
+    .content{
+        justify-content: flex-start;
+        width: 100%;
+        height: 60%;
+    }
+
+    .projetos{
+        width: 100%;
+    }
+    .projects-mobile{
+        margin: 0px;
+        padding: 0px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 90%;
+        width: 100%;
+        display: block;
+    }
+
+    .menu-projects{
+        height: 100%;
+        width: 100%;
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .menu-projects span{
+        background-color: #bf00ff;
+        height: 20%;
+        width: 85%;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .menu-projects span a{
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 700;
+        color: #FFF;
+        justify-content: center;
+        align-content: center;
+
+    }
+
 }
 
 /* Show responsivity */
@@ -781,24 +954,157 @@ h2 {
     .project-container{
         display: none;
     }
-
-    .projects-mobile ul li{
-        color: #FFF;
-        font-size: 20px;
-        list-style-type: none;
-        padding: 10px;
-    }
-
-    .projects-mobile ul li a{
-
-        color: #FFF;
-        text-decoration: none;
-    }
+    
 
     .projetos{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+    }
+
+
+    .sobre-mim{
+        padding-right: 20px;
+    }
+
+    .inicio{
+        padding-left: 20px;
+    }
+    .image-planet-container img{
+        width: 42px;
+        height: 42px;
+    }
+ 
+   
+
+}
+
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+    .titulo{
+        font-size: 20px;
+    }
+
+    .top-right{
+        font-size: 14px;
+    }
+
+    .top-left{
+        font-size: 14px;
+    }
+
+    .section h1 {
+        font-size: 20px;
+    }
+
+    .overlay p{
+        font-size: 12px;
+    }
+
+    .bottom-right {
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+
+    .texto2 h1 {
+        font-size: 20px;
+    }
+
+    .texto2 p{
+        font-size: 12px;
+    }
+
+    .descricao h1 {
+        font-size: 20px;
+    }
+
+    .descricao h2 {
+        font-size: 12px;
+    }
+
+    .descricao{
+        justify-content: flex-start;
+    }
+
+    .sobre-mim{
+        padding-right: 20px;
+    }
+
+    .inicio{
+        padding-left: 20px;
+    }
+
+    .image-sun-container2{
+        position: absolute;
+        top:20px;
+        z-index: 2;
+    }
+
+    .image-planet-container{
+        z-index: 1;
+    }
+
+    .image-planet-container img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .descricao-projetos{
+        width: 90%;
+        height: 10%;
+    }
+
+    .content{
+        justify-content: flex-start;
+        width: 100%;
+        height: 60%;
+    }
+
+    .projetos{
+        width: 100%;
+    }
+    .projects-mobile{
+        margin: 0px;
+        padding: 0px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 90%;
+        width: 100%;
+        display: block;
+    }
+
+    .menu-projects{
+        height: 100%;
+        width: 100%;
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .menu-projects span{
+        background-color: #bf00ff;
+        height: 20%;
+        width: 85%;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .menu-projects span a{
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 700;
+        color: #FFF;
+        justify-content: center;
+        align-content: center;
+
     }
 
 }
@@ -815,4 +1121,17 @@ h2 {
     /* Below the menu and menu button */
     display: none;
     /* Hidden by default */
+}
+
+
+.image-sun-container2{
+    z-index: 2;
+}
+
+.image-planet-container{
+    z-index: 1;
+}
+
+.right-side{
+    x z-index: 3;
 }
