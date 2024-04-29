@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 
 :root {
@@ -598,7 +599,7 @@ h2 {
     /* Altura da lanterna */
     border-radius: 50%;
     /* Bordas arredondadas para criar um círculo */
-    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.075) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.279) 0%, transparent 70%);
     /* Gradiente radial para simular luz */
     pointer-events: none;
     /* Evita que a lanterna interfira com elementos clicáveis */
