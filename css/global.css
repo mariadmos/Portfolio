@@ -340,6 +340,7 @@ h2 {
     height: 300px;
     /* Altura da div */
     flex-direction: column;
+    width: 98%;
 }
 
 .svg {
@@ -471,7 +472,7 @@ h2 {
     margin-left: 0%;
     text-align: center;
     font-size: 10px;
-    width: 100%;
+    width: 98%;
     /* Largura da div */
     height: 100%;
     overflow: hidden;

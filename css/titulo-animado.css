@@ -4,7 +4,7 @@
 /* Código referente ao nome */
 
 h1 {
-    font-size: clamp(2rem, 6vw + 1rem, 8rem);
+    /*font-size: clamp(2rem, 6vw + 1rem, 8rem);*/
     text-transform: uppercase;
     font-style: italic;
     font-family: "Roboto", sans-serif;

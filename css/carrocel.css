@@ -86,6 +86,11 @@
     .carousel-item {
         height: 390px !important;
     }
+    .carousel-item.focused {
+        flex: 0 0 310px; 
+        margin-left: 10px;
+    }
+
 }
 
 .project-container {

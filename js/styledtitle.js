@@ -81,7 +81,11 @@ const HEADING = document.getElementById('name-maria-dalva-pisca');
     const updateAccent2 = () => {
         const color = 'rgb(191, 0, 255, 1)';
         document.getElementById("name-maria-dalva").style.setProperty('--accent', color);
-        document.getElementById("name-maria-dalva").style.setProperty('margin-left', "-18px");
+        if (window.innerWidth > 600) {
+        document.getElementById("name-maria-dalva").style.setProperty('margin-left', "-20px");}
+        else{
+            document.getElementById("name-maria-dalva").style.setProperty('margin-left', "-8px");
+        }
         RENDER2();
         isSolidColor2 = !isSolidColor2; // Toggle the state
     };
@@ -89,7 +93,11 @@ const HEADING = document.getElementById('name-maria-dalva-pisca');
     const updateAccent3 = () => {
         const color = isSolidColor ? 'rgb(191, 0, 255, 1)' : 'rgb(191, 0, 255, 0.5)'; // Solid or semi-transparent
         document.getElementById("name-maria-dalva-pisca-2").style.setProperty('--accent', color);
-        document.getElementById("name-maria-dalva-pisca-2").style.setProperty('margin-left', "-20px");
+        if (window.innerWidth > 600) {
+        document.getElementById("name-maria-dalva-pisca-2").style.setProperty('margin-left', "-20px");}
+        else{
+            document.getElementById("name-maria-dalva-pisca-2").style.setProperty('margin-left', "-10px");
+        }
         RENDER3();
         isSolidColor3 = !isSolidColor3; // Toggle the state
     };
