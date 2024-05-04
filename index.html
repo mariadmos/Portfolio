@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Maria Dalva Martins</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -26,6 +27,7 @@
                 <a href="#second" class="nav-link">Sobre Mim</a>
                 <a href="#third" class="nav-link">Habilidades</a>
                 <a href="#fourth" class="nav-link">Projetos</a>
+                <a href="#fifth" class="nav-link">Contato</a>
             </div>
         </div>
         <div id="first" class="inicio full-screen">
@@ -35,14 +37,17 @@
                 <div class="container-perfil">
                     <div class="overlay-image">
                         <img src="./img/menina.png" alt="menina" class="menina">
-                        <img src="./img/circulo.svg" alt="Imagem Sobreposta" class="neon-effect">
+                        <img src="/img/circulo.svg" alt="Imagem Sobreposta" class="neon-effect">
                     </div>
                     <div class="overlay">
-                        
-                        <h1 class="titulo">Sou <strong>Maria Dalva Martins</strong></h1>
+                        <h1 class="titulo">Sou
+                            <strong id="name-maria-dalva-pisca"></strong>
+                            <strong id="name-maria-dalva"></strong>
+                            <strong id="name-maria-dalva-pisca-2"></strong>
+                        </h1>
                         <p>
                             Olá, sou Maria Dalva Martins, uma entusiasta de tecnologia e apaixonada por desenvolvimento
-                            web. Atualmente, estudo BICT com ênfase em Engenharia da
+                            web. Atualmente, estudo Bacharelado em Ciência da Computação com ênfase em Engenharia da
                             Computação na UFMA (Universidade Federal do Maranhão), onde estou imersa em um ambiente que
                             me desafia constantemente a expandir meus conhecimentos e habilidades.
                         </p>
@@ -55,9 +60,9 @@
                     </div>
                 </div>
                 <div class="bottom-right">
-                    <a href="https://www.linkedin.com/in/mariadalvamos/"><img src="img/linkedin.png"
+                    <a href="https://www.linkedin.com/in/mariadalvamos/" target="_blank"><img src="/img/linkedin.png"
                             alt="LinkedIn"></a>
-                    <a href="https://github.com/mariadmos"><img src="img/github.png"
+                    <a href="https://github.com/estudandoparaalimentarflorzinha"  target="_blank"><img src="/img/github.png"
                             alt="GitHub"></a>
                 </div>
             </div>
@@ -97,7 +102,7 @@
                 </div>
                 <div class="overlay-imag">
                     <img src="./img/eu.png" alt="menina" class="menina">
-                    <img src="./img/circulo.svg" alt="Imagem Sobreposta" class="neon-effect">
+                    <img src="/img/circulo.svg" alt="Imagem Sobreposta" class="neon-effect">
                 </div>
             </div>
         </div>
@@ -117,10 +122,10 @@
                         <!-- <img class="sol" src="/img/elementos.svg" alt="Imagem elementos"> -->
                     </div>
                     <div class="image-sun-container2">
-                        <img class="sol" src="./img/elementos.svg" alt="Imagem elementos">
+                        <img class="sol" src="/img/elementos.svg" alt="Imagem elementos">
                     </div>
                     <div class="image-planet-container">
-                        <img src="img/figma.svg" alt="Descrição do SVG" class="moving-image image1" >
+                        <img src="img/figma.svg" alt="Descrição do SVG" class="moving-image image1">
                         <img src="img/react.svg" alt="Descrição do SVG" class="moving-image image2">
                         <img src="img/c.svg" alt="Descrição do SVG" class="moving-image image3">
                         <img src="img/git.svg" alt="Descrição do SVG" class="moving-image image4">
@@ -136,224 +141,115 @@
         </div>
         <div id="fourth" class="projetos full-screen">
             <div class="descricao-projetos">
-            <h1 class="titulo" style="color: #FFF;">Meus <strong>Projetos</strong></h1>
-        </div>
-            <div class="content">
-                <div class="projects-mobile">
-                    <div class="menu-projects">
-                        <span>
-                            <img src="img/icone.png.png" alt="Descrição do SVG" >
-                            <a href=""> Git repo 1</a>
-                        </span>
-                        <span>
-                            <img src="img/icone.png.png" alt="Descrição do SVG" >
-                            <a href=""> Git repo 1</a>
-                        </span>
-                        <span>
-                            <img src="img/icone.png.png" alt="Descrição do SVG" >
-                            <a href=""> Git repo 1</a>
-                        </span>
-                        <span>
-                            <img src="img/icone.png.png" alt="Descrição do SVG" >
-                            <a href=""> Git repo 1</a>
-                        </span>
-                        
+                <h1 class="titulo" style="color: #FFF;">Meus <strong>Projetos</strong></h1>
+            </div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev">
+                    <!-- Prev -->
+                    <img src="./img/arrow-left.svg" alt="Previous"></img>
+                </button>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="project-header">
+                            <a href="https://androide.vercel.app/" target="_blank"><img src="/img/androide.png"
+                                    alt="androide" width="300" height="180"></a>
+                        </div>
+                        <div class="project-body">
+                            <h3>
+                                Conversor
+                            </h3>
+                            <span>
+                                A live Geolocation app for finding tweets and twitter users around you.
+                            </span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-footer-container-button">
+                                <a href="https://androide.vercel.app/" target="_blank"> Jogar</a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="project-header">
+                            <a href="https://jogo-de-carros-urtt.vercel.app/" target="_blank"><img src="/img/carrinhos.png"
+                                    alt="androide" width="300" height="180"></a>
+                        </div>
+                        <div class="project-body">
+                            <h3>
+                                Conversor
+                            </h3>
+                            <span>
+                                A live Geolocation app for finding tweets and twitter users around you.
+                            </span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-footer-container-button">
+                                <a href="https://jogo-de-carros-urtt.vercel.app/" target="_blank"> Jogar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="project-header">
+                            <a href="https://androide.vercel.app/" target="_blank"><img src="/img/androide.png"
+                                    alt="androide" width="300" height="180"></a>
+                        </div>
+                        <div class="project-body">
+                            <h3>
+                                Conversor
+                            </h3>
+                            <span>
+                                A live Geolocation app for finding tweets and twitter users around you.
+                            </span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-footer-container-button">
+                                <a href="https://androide.vercel.app/" target="_blank"> Jogar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" src="./arrow-right.svg">
+                    <!-- Next -->
+                    <img src="./img/arrow-right.svg" alt="Nextt"></img>
+                </button>
+            </div>
+        </div>
+        <div id="fifth" class="contato full-screen">
+            <div class="overlay-2">
+                <div class="container-contato-fale-comigo">
                     
-                </div>
-                <div class="project-container">
-                    <div class="project-header">
-                        <a href="https://androide.vercel.app/" target="_blank"><img src="./img/androide.png"alt="androide"width="300" height="150"></a>
+                        <h1 class="titulo-fale-comigo">Fale<strong>Comigo</strong></h1>
+                        <form action="https://formsubmit.co/dalva.maria.mos@gmail.com" method="post">
+
+                            <label for="email">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" required></textarea>
+
+                            <button type="submit">Send</button>
+                        </form>
                     </div>
-                    <div class="project-body">
-                      <h3>
-                      robotron
-                      </h3>
-                      <span>
-                        Jogo que a medida que vc muda as habilidades do personagem ele fica mais forte
-                      </span>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-footer-container-button">
-                        <a  href="https://androide.vercel.app/" target="_blank"> Jogar</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="project-container">
-                    <div class="project-header">
-                        <a href="https://jogo-de-carros-urtt.vercel.app/" target="_blank"><img src="./img/carrinhos.png"alt="androide"width="300" height="150"></a>
-                    </div>
-                    <div class="project-body">
-                      <h3>
-                      jogo dos carrinhos
-                      </h3>
-                      <span>
-                        jogo que você pontua quando atravessa a rua sem ser atropelado
-                      </span>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-footer-container-button">
-                        <a href="https://jogo-de-carros-urtt.vercel.app/" target="_blank"> Jogar</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="project-container">
-                    <div class="project-header">
-                        <a href="https://androide.vercel.app/" target="_blank"><img src="./img/androide.png"alt="androide"width="300" height="150"></a>
-                    </div>
-                    <div class="project-body">
-                      <h3>
-                      Androide
-                      </h3>
-                      <span>
-                        Jogo 
-                      </span>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-footer-container-button">
-                        <a href="https://androide.vercel.app/" target="_blank"> Jogar</a>
-                        </div>
-                    </div>
-                  </div>
-                </div>
+
+                
+            </div>
         </div>
+    </div>
     </div>
     <div id="overlay"></div>
     <div class="cursor"></div>
-    <script src="script.js"></script>
 </body>
-<script>
-    // Função para rolar para a âncora correspondente quando clicada
-    document.querySelectorAll('.right-side a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault(); // Impede o comportamento padrão do link
-            const targetId = this.getAttribute('href').substring(1); // Obtém o ID do alvo
-            const targetElement = document.getElementById(targetId); // Obtém o elemento alvo
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' }); // Rola suavemente até o elemento
-            }
-        });
-    });
-</script>
-<script>
-    const container = document.querySelector('.image-planet-container');
-    const image1 = document.querySelector('.image1');
-    const image2 = document.querySelector('.image2');
-    const image3 = document.querySelector('.image3');
-    const image4 = document.querySelector('.image4');
-    const image5 = document.querySelector('.image5');
-    const image6 = document.querySelector('.image6');
-    const image7 = document.querySelector('.image7');
-    const image8 = document.querySelector('.image8');
-    const image9 = document.querySelector('.image9');
-    const image10 = document.querySelector('.image10');
-
-    setTimeout(() => {
-        moveImage(image1, 0, 100, 100); // image1 executa órbita elíptica com raio horizontal 200 e raio vertical 100
-        setTimeout(() => {
-            moveImage(image2, 0, 150, 120); // image2 executa órbita elíptica com raio horizontal 180 e raio vertical 120
-            setTimeout(() => {
-                moveImage(image3, 0, 200, 140); // image3 executa órbita elíptica com raio horizontal 220 e raio vertical 140
-                setTimeout(() => {
-                    moveImage(image4, 0, 250, 120); // Adicione a órbita elíptica para image4 com raios de 200 e 120
-                    setTimeout(() => {
-                        moveImage(image5, 0, 300, 100); // Adicione a órbita elíptica para image5 com raios de 220 e 100
-                        setTimeout(() => {
-                            moveImage(image6, 0, 350, 140); // Adicione a órbita elíptica para image6 com raios de 180 e 140
-                            setTimeout(() => {
-                                moveImage(image7, 0, 400, 120); // Adicione a órbita elíptica para image7 com raios de 240 e 120
-                                setTimeout(() => {
-                                    moveImage(image8, 0, 450, 110); // Adicione a órbita elíptica para image8 com raios de 200 e 110
-                                    setTimeout(() => {
-                                        moveImage(image9, 0, 500, 130); // Adicione a órbita elíptica para image9 com raios de 210 e 130
-                                        setTimeout(() => {
-                                            moveImage(image10, 0, 550, 100); // Adicione a órbita elíptica para image10 com raios de 230 e 100
-                                        }, 2800);
-                                    }, 2600);
-                                }, 2400);
-                            }, 2200);
-                        }, 2000);
-                    }, 1800);
-                }, 1600);
-            }, 1400);
-        }, 1200);
-    }, 1000);
-
-    function moveImage(img, num, radiusX, radiusY) {
-        const containerWidth = container.offsetWidth + num;
-        const containerHeight = container.offsetHeight + num;
-
-        const centerX = containerWidth / 2;
-        const centerY = containerHeight / 2;
-        let angle = 0;
-
-        setInterval(() => {
-            const newX = centerX + radiusX * Math.cos(angle);
-            const newY = centerY + radiusY * Math.sin(angle);
-
-            img.style.left = `${newX}px`;
-            img.style.top = `${newY - 200}px`;
-
-            angle += 0.01; // Adjust speed of rotation
-        }, 10.0); // Adjust interval for smoother animation
-    }
-
-</script>
-<script>
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item');
-
-    function showSlide(index) {
-        currentIndex = index;
-        const offset = -currentIndex * 100;
-        document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % items.length;
-        showSlide(currentIndex);
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        showSlide(currentIndex);
-    }
-</script>
-<script>
-    const cursor = document.querySelector('.cursor');
-    const lanterna = document.createElement('div');
-    lanterna.classList.add('lanterna');
-    document.body.appendChild(lanterna);
-
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.top = `${e.clientY}px`; /* Move o cursor verticalmente com o mouse */
-        cursor.style.left = `${e.clientX}px`; /* Move o cursor horizontalmente com o mouse */
-
-        // Move a lanterna para a posição do cursor
-        lanterna.style.top = `${e.clientY - 0}px`; /* Ajuste conforme necessário */
-        lanterna.style.left = `${e.clientX - 0}px`; /* Ajuste conforme necessário */
-    });
-
-    document.getElementById('mobile-menu-button').addEventListener('click', function (event) {
-    var menuItems = document.getElementById('mobile-menu-items');
-    var overlay = document.getElementById('overlay');
-    if (menuItems.style.display !== 'flex') {
-        menuItems.style.display = 'flex';
-        overlay.style.display = 'block'; // Show the overlay
-    } else {
-        menuItems.style.display = 'none';
-        overlay.style.display = 'none'; // Hide the overlay
-    }
-    event.stopPropagation(); // Prevents the document click event from firing
-});
-
-document.addEventListener('click', function () {
-    var menuItems = document.getElementById('mobile-menu-items');
-    var overlay = document.getElementById('overlay');
-    menuItems.style.display = 'none';
-    overlay.style.display = 'none'; // Hide the overlay
-});
-</script>
-
+<!-- código menu -->
+<script src="./js/menu.js"></script>
+<!-- código planetas -->
+<script src="./js/planetas.js"></script>
+<!-- código carrocel -->
+<script src="./js/carrocel.js"></script>
+<!-- codigo da lanterna -->
+<script src="./js/lanterna.js"></script>
+<!-- código do titulo que pisca -->
+<script src="./js/styledtitle.js"></script>
 
 </html>

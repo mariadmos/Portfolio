@@ -1,0 +1,543 @@
+
+
+:root {
+    --primary-color: #bf00ff;
+}
+
+body {
+    background-color: rgb(18, 1, 20);
+    font-family: "Fira Code", monospace;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@keyframes neon {
+    0% {
+        filter: brightness(150%);
+    }
+
+    50% {
+        filter: brightness(100%);
+    }
+
+    100% {
+        filter: brightness(150%);
+    }
+}
+
+@keyframes neon-menina {
+    0% {
+        filter: brightness(110%);
+    }
+
+    50% {
+        filter: brightness(100%);
+    }
+
+    100% {
+        filter: brightness(110%);
+    }
+}
+
+.neon-effect {
+    animation: neon 1s infinite alternate;
+    position: absolute;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    z-index: 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.menu-sobre-mim {
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    z-index: 999999999;
+}
+
+/* Posicionando elementos nos cantos da tela */
+.top-left {
+    font-size: 19px;
+    /* Tamanho do texto do título */
+    position: absolute;
+    top: 14px;
+    left: 23px;
+    color: white;
+    /* Cor do texto */
+}
+
+.top-right {
+    margin-right: 40px;
+    font-size: 19px;
+    position: absolute;
+    top: 14px;
+    right: 23px;
+    color: white;
+    /* Cor do texto */
+}
+
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.right-side {
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    transform: translateY(-50%);
+    color: white;
+    /* Cor do texto */
+}
+
+.bottom-right {
+    bottom: 14px;
+    color: white;
+    /* Cor do texto */
+    width: 70%;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+
+/* Estilizando as âncoras */
+.right-side a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    /* Cor dos links */
+}
+
+
+.top-left,
+.top-right,
+.bottom-left,
+.right-side,
+.bottom-right {
+    color: var(--primary-color);
+}
+
+.orange-text {
+    --primary-color: #bf00ff;
+}
+
+.gray-text {
+    color: gray;
+}
+
+.right-side a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    writing-mode: vertical-rl;
+    /* Orientação vertical da direita para a esquerda */
+    /* Mantém o texto na orientação vertical */
+}
+
+.bottom-right a {
+    margin-right: 10px;
+}
+
+.bottom-right img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+/* Estilos básicos para os links */
+.nav-link {
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right,
+            #d614eb,
+            #d614eb 50%,
+            #f3f2f2 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilo da barra antes do link */
+.nav-link:before {
+    content: '';
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilo ao passar o mouse sobre o link */
+.nav-link:hover {
+    background-position: 0;
+}
+
+/* Estilo da barra antes do link ao passar o mouse */
+.nav-link:hover::before {
+    width: 100%;
+}
+
+
+.overlay-image:hover img {
+    filter: brightness(150%);
+    /* Adicionado o filtro de brilho ao passar o mouse */
+}
+
+
+.bottom-right img:hover {
+    transform: scale(1.2);
+    /* Aumenta o tamanho da imagem em 20% no hover */
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição suave de 0.3 segundos */
+    filter: brightness(2000%);
+    /* Aumenta o brilho da imagem em 20% no hover */
+}
+
+.menina {
+    animation: neon-menina 1s infinite alternate;
+    position: relative;
+    z-index: 2;
+    margin-top: -13%;
+    width: 75%;
+}
+
+/*transition: filter 0.5s ease; /* Adiciona uma transição suave 
+    animation: mudarCor 5s infinite linear; /* Inicia a animação de mudança de cor 
+}
+
+@keyframes mudarCor {
+    0% { filter: hue-rotate(0deg); } /* Inicia com a cor original (0 graus) 
+    100% { filter: hue-rotate(360deg); } /* Termina com a cor totalmente alterada (360 graus)
+}*/
+
+
+/* Codigo de estilo do Onii */
+
+.full-screen {
+    height: 100vh;
+    padding-top: 5vh;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* Ocupa toda a altura da tela */
+    /* Cor de fundo opcional */
+    text-align: center;
+    /* Centraliza conteúdo opcional */
+    /* Espaçamento interno opcional */
+}
+
+.full-screen:nth-child(2) {
+    /* margin-top: 5vh; */
+    /* Margem igual à altura da tela */
+    /* Cor de fundo opcional */
+}
+
+.full-screen:nth-child(3) {
+    /* margin-top: 100vh; */
+    /* Margem igual à altura da tela */
+    /* Cor de fundo opcional */
+    /* margin-top: 10vh; */
+}
+
+
+/* Estilos para a seção "Sobre Mim" */
+
+
+.overlay {
+    width: 60%;
+    /* Define a largura da div do texto */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+.overlay-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+    position: relative;
+
+    width: 35%;
+    /* Ajuste conforme necessário */
+}
+
+.section h1 {
+    font-size: 60px;
+    color: #fffbfb;
+    margin-bottom: 20px;
+    /* Reduzindo a margem inferior para 20px */
+}
+
+.section p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.6;
+    flex: 1;
+    /* Ocupa o espaço restante */
+    padding-right: 20px;
+    /* Adiciona um espaçamento à direita do texto */
+
+}
+
+.container-perfil {
+    display: flex;
+    align-items: center;
+    /* Alinha os itens verticalmente */
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 600px; */
+    /* padding: 0 0 10em; */
+    width: 100%;
+    height: 85%;
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+h2 {
+    width: 1000px;
+    color: #f3f2f2;
+    font-size: 14px;
+}
+
+.descricao {
+    display: flex;
+    justify-content: center;
+    /* Alinha horizontalmente */
+    align-items: center;
+    /* Alinha verticalmente */
+    height: 300px;
+    /* Altura da div */
+    flex-direction: column;
+}
+
+.svg {
+
+    width: 200px;
+    /* Largura da div */
+    height: 200px;
+    /* Altura da div */
+    overflow: hidden;
+    /* Esconde o conteúdo que ultrapassa */
+}
+
+.sobre-mim h2 {
+    color: #fffbfb;
+    font-size: 20px;
+    /* Tamanho da fonte */
+    margin-top: 20px;
+    /* Espaçamento superior */
+    font-family: "Fira Code", monospace;
+}
+
+.overlay-2 {
+    color: #FFF;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.texto2 {
+    width: 60%;
+}
+
+.overlay-imag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+    position: relative;
+
+    width: 35%;
+    /* Ajuste conforme necessário */
+}
+
+@keyframes moveImage {
+    from {
+        transform: translateX(0);
+        /* Starting position */
+    }
+
+    to {
+        transform: translateX(100%);
+        /* Ending position */
+    }
+}
+
+
+.teste {
+    position: fixed;
+}
+
+/*** Estilos para a seção "Projetos" ***/
+
+
+.container-geral {
+    height: 100%;
+}
+
+.container-sobre-mim {
+    height: 100%;
+
+}
+
+
+
+.image-sun-container {
+    top: 100px;
+    z-index: 2;
+}
+
+.mage-sun-container2{
+    top: 100px;
+    z-index: 2;
+}
+
+.image-planet-container {
+    width: 500%;
+    position: relative;
+    z-index: 1;
+}
+
+.moving-div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    /* Define o container como flexível */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+}
+
+.moving-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveImage linear infinite alternate;
+    /* Animation definition */
+    transition: left 0.01s, top .01s;
+}
+
+
+.contatos {
+    height: 100%;
+
+}
+
+.contatos h1 {
+    color: #FFF;
+}
+
+.projetos {
+    flex-direction: column;
+    margin-left: 0%;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+    /* Largura da div */
+    height: 100%;
+    overflow: hidden;
+    /* Esconde o conteúdo que ultrapassa */
+    /* margin-right: 100px; */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+/* Add this to your CSS file */
+#mobile-menu-button {
+    display: none;
+}
+
+#mobile-menu-button span {
+    font-size: 30px;
+    font-weight: bold;
+    align-self: center;
+    width: 100%;
+}
+
+#mobile-menu-items {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    display: none;
+    /* Hide it by default */
+    flex-direction: column;
+    animation: slide-up 0.5s ease;
+    z-index: 999;
+}
+
+.projects-mobile{
+    display: none;
+}
+
+.content{
+    display: flex;
+    height: 70%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.descricao-projetos{
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.descricao-projetos h1{
+    font-size: 30px;
+}
+
+.project-container{
+    margin: 10px;
+    width: 30%;
+}
+
+.project-container img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+

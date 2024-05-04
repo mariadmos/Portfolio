@@ -1,0 +1,60 @@
+
+/* Estilos para o cursor */
+/* Estilos para o cursor */
+.cursor {
+    position: fixed;
+    width: 20px;
+    /* Largura da luz inicial */
+    height: 20px;
+    /* Altura da luz inicial */
+    background-color: transparent;
+    /* Cor de fundo transparente */
+    border-radius: 50%;
+    /* Bordas arredondadas para criar um círculo */
+    pointer-events: none;
+    /* Evita que o cursor interfira com elementos clicáveis */
+    z-index: 9999;
+    /* Garante que o cursor esteja sempre acima de outros elementos */
+    transform: scale(0);
+    /* Começa invisível */
+}
+
+.lanterna {
+    position: fixed;
+    width: 800px;
+    /* Largura da lanterna */
+    height: 800px;
+    /* Altura da lanterna */
+    border-radius: 50%;
+    /* Bordas arredondadas para criar um círculo */
+    background: radial-gradient(circle at center, rgba(173, 21, 187, 0.075) 0%, transparent 70%);
+    /* Gradiente radial para simular luz */
+    pointer-events: none;
+    /* Evita que a lanterna interfira com elementos clicáveis */
+    z-index: 9998;
+    /* Garante que a lanterna esteja abaixo do cursor */
+    animation: lanterna-anim 1s ease-out;
+    /* Animação para o efeito de expansão */
+    transform: translate(-50%, -50%) scale(1.2);
+    /* Centraliza e ajusta o tamanho da lanterna */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    top: 50%;
+    /* Centraliza verticalmente */
+}
+
+@keyframes lanterna-anim {
+    from {
+        transform: translate(-50%, -50%) scale(0.8);
+        /* Começa com escala menor e centralizada */
+        opacity: 1;
+        /* Começa totalmente opaca */
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1.2);
+        /* Torna-se visível com escala maior e centralizada */
+        opacity: 0;
+        /* Torna-se completamente transparente */
+    }
+}
