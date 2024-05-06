@@ -1,12 +1,13 @@
 div#carousel { 
   padding-top: 5%; 
   font-size:0; 
-  margin-bottom: 3rem;  
+  margin-bottom: 3rem; 
+  overflow: hidden; 
 }
 figure#spinner { 
   transform-style: preserve-3d; 
   height: 300px; 
-  transform-origin: 50% 50% -200px; 
+  transform-origin: 50% 50% -525px; 
   transition: 1s; 
 } 
 figure#spinner img { 
