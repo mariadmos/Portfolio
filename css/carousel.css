@@ -50,7 +50,8 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
   div#carousel { 
     padding-top: 5%; 
     font-size:0; 
-    margin-bottom: 3rem;  
+    margin-bottom: 3rem; 
+    overflow: hidden; 
   }
   figure#spinner { 
     transform-style: preserve-3d; 
