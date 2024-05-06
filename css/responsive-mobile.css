@@ -223,7 +223,7 @@
     }
 
     .overlay {
-        padding-top: 60px;
+        padding-top: 90px;
         width: 100% !important;
         /* Define a largura da div do texto */
         text-align: center;
@@ -289,8 +289,16 @@
         width: 42px;
         height: 42px;
     }
- 
-   
+    .jupter {
+        width: 50vw; /* Tamanho relativo à largura da tela */
+        height: 50vw; /* Tamanho relativo à largura da tela */
+    }
+
+    #sixth .ring,
+    #sixth .ring-front {
+        width: 30vw; /* Tamanho relativo à largura da tela */
+        height: 2vw; /* Tamanho relativo à largura da tela */
+    }
 
 }
 

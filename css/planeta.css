@@ -1,0 +1,64 @@
+/* Certifique-se de que este CSS esteja presente em uma seção acessível pela página onde está o HTML acima */
+#sixth {
+    --planet: 200px;
+    --orbit1: 400px;
+    --orbit2: 350px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jupter {
+    position: relative;
+    width: var(--planet);
+    height: var(--planet);
+}
+
+#sixth #planet {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(191, 0, 255), hsl(25, 90%, 45%));
+    border-radius: 50%;
+}
+
+#sixth .ring,
+#sixth .ring-front {
+    width: 600px;
+    height: 30px;
+    border: solid 1px white;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(45deg);
+    animation: fatten 3s ease-in-out infinite alternate;
+}
+
+#sixth .ring {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@keyframes fatten {
+	from {
+		height: 10px;
+	}
+	to {
+		height: 50px;
+	}
+}
+
+/* Media query para ajustar a responsividade */
+@media screen and (max-width: 768px) {
+    /* Reduzir ainda mais o tamanho do planeta e ajustar o tamanho do anel para dispositivos menores */
+    :root {
+        --planet: 150px;
+        --orbit1: 280px;
+        --orbit2: 240px;
+    }
+
+    #sixth .ring,
+    #sixth .ring-front {
+        width: calc(var(--planet) + 220px); /* Ajustar a largura do anel para dispositivos menores */
+    }
+}
