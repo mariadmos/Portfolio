@@ -466,6 +466,9 @@ h2 {
     transition: left 0.01s, top .01s;
 }
 
+.contatos.full-screen.habilidades{
+    height: auto;
+}
 
 .contatos {
     height: 100%;
